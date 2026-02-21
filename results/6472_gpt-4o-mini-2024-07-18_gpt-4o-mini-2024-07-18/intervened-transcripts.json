@@ -1,0 +1,519 @@
+[
+  {},
+  {
+    "case_id": "case_1",
+    "case_vignette": "A 51-year-old white man presents to the clinic with a 2-year history of a painful, recurrent rash on his fingers. He initially noticed redness, irritation, and pustules around his nails that he thought were caused by an infection. However, the rash progressed to affect the nail bed, eventually destroying his nails. On examination, well-demarcated, scaly plaques with associated pustules and nail atrophy are present on the right second and third distal digits. He is otherwise healthy.",
+    "question": "What is the final diagnosis?",
+    "improved": false,
+    "reward": false,
+    "intervened_first_or_last": 0,
+    "failure_brief": "The agent did not ask about potential exposure to chemicals or irritants outside of the user's job, which could have been relevant to the diagnosis.",
+    "failure_index": 31,
+    "intervened_message": "Remember to ask about exposure to chemicals or irritants in the patient's daily life, not just in their job.",
+    "success_prev": false,
+    "intervened_index": 32,
+    "trial_0": {
+      "vignette_mcq": "Acrodermatitis continua of Hallopeau",
+      "vignette_frq": "The final diagnosis is pustular psoriasis.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are a patient. You do not have any medical knowledge. You have to describe your symptoms from the given case vignette based on the questions asked. Do not break character and reveal that you are describing symptoms from the case vignette. Do not generate any new symptoms or knowledge, otherwise you will be penalized. Do not reveal more information than what the question asks. Keep your answer short, to only 1 sentence. Simplify terminology used in the given paragraph to layman language.\n**Case Vignette**: A 51-year-old white man presents to the clinic with a 2-year history of a painful, recurrent rash on his fingers. He initially noticed redness, irritation, and pustules around his nails that he thought were caused by an infection. However, the rash progressed to affect the nail bed, eventually destroying his nails. On examination, well-demarcated, scaly plaques with associated pustules and nail atrophy are present on the right second and third distal digits. He is otherwise healthy."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "user",
+          "content": "I have a painful rash on my fingers that keeps coming back, with redness, irritation, and bumps around my nails."
+        },
+        {
+          "role": "assistant",
+          "content": "How long have you been experiencing this rash?"
+        },
+        {
+          "role": "user",
+          "content": "I've been dealing with this rash for about two years."
+        },
+        {
+          "role": "assistant",
+          "content": "What is your age and sex?"
+        },
+        {
+          "role": "user",
+          "content": "I am a 51-year-old man."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any triggers that worsen the rash, such as certain activities or products?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't noticed any specific triggers that make the rash worse."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any other symptoms, like itching or swelling in other areas?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any itching or swelling in other areas, just the rash on my fingers."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any previous skin conditions or allergies in the past?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't had any previous skin conditions or allergies."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you currently taking any medications or using any topical treatments?"
+        },
+        {
+          "role": "user",
+          "content": "I am not currently taking any medications or using any topical treatments."
+        },
+        {
+          "role": "assistant",
+          "content": "Is there a family history of skin conditions or allergies?"
+        },
+        {
+          "role": "user",
+          "content": "There is no family history of skin conditions or allergies that I know of."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent changes in your occupation or hobbies that involve hand exposure?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't had any recent changes in my occupation or hobbies that involve hand exposure."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you frequently wash your hands or use hand sanitizers?"
+        },
+        {
+          "role": "user",
+          "content": "I do wash my hands frequently, but I don't use hand sanitizers often."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you tried any over-the-counter treatments for the rash?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't tried any over-the-counter treatments for the rash."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any other medical conditions, such as diabetes or autoimmune disorders?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any other medical conditions like diabetes or autoimmune disorders."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any changes in your diet or lifestyle recently?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't experienced any changes in my diet or lifestyle recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any pets or have you been in contact with animals recently?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any pets and haven't been in contact with animals recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you traveled anywhere recently that could have exposed you to different environments?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't traveled anywhere recently that could have exposed me to different environments."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you work with any chemicals or irritants in your job?"
+        },
+        {
+          "role": "user",
+          "content": "I don't work with any chemicals or irritants in my job."
+        },
+        {
+          "role": "system",
+          "content": "[*INTERVENTION*: Remember to ask about exposure to chemicals or irritants in the patient's daily life, not just in their job.]"
+        },
+        {
+          "role": "user",
+          "content": "Do you have any exposure to chemicals or irritants in your daily life outside of work?"
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any exposure to chemicals or irritants in your daily life outside of work?"
+        },
+        {
+          "role": "assistant",
+          "content": "I don't have any exposure to chemicals or irritants in my daily life outside of work."
+        },
+        {
+          "role": "user",
+          "content": "I don't have any exposure to chemicals or irritants in my daily life outside of work."
+        }
+      ],
+      "multiturn_mcq": "Acrodermatitis continua of Hallopeau.",
+      "multiturn_frq": "The final diagnosis is likely pustular psoriasis affecting the fingers.",
+      "ground_truth": "acute contact dermatitis",
+      "reward": false,
+      "singleturn_mcq": "Acrodermatitis continua of Hallopeau.",
+      "singleturn_frq": "The final diagnosis is pustular psoriasis.",
+      "summarized_conversation": "A patient presents with a painful rash on their fingers that keeps coming back, characterized by redness, irritation, and bumps around the nails. The patient has been dealing with this rash for about two years and is a 51-year-old man. He has not noticed any specific triggers that exacerbate the rash and does not experience itching or swelling in other areas, only the rash on his fingers. The patient has no previous history of skin conditions or allergies and is not currently taking any medications or using any topical treatments. There is no known family history of skin conditions or allergies. The patient has not experienced any recent changes in occupation or hobbies that involve hand exposure. He washes his hands frequently but does not use hand sanitizers often. The patient has not tried any over-the-counter treatments for the rash and does not have any other medical conditions such as diabetes or autoimmune disorders. There have been no recent changes in his diet or lifestyle. The patient does not have any pets and has not been in contact with animals recently. He has not traveled anywhere recently that could have exposed him to different environments and does not work with any chemicals or irritants in his job. When asked about exposure to chemicals or irritants in daily life outside of work, the patient confirms that he does not have any such exposure.",
+      "summarized_mcq": "Acrodermatitis continua of Hallopeau",
+      "summarized_frq": "Chronic irritant contact dermatitis."
+    }
+  },
+  {
+    "case_id": "case_1",
+    "case_vignette": "A 51-year-old white man presents to the clinic with a 2-year history of a painful, recurrent rash on his fingers. He initially noticed redness, irritation, and pustules around his nails that he thought were caused by an infection. However, the rash progressed to affect the nail bed, eventually destroying his nails. On examination, well-demarcated, scaly plaques with associated pustules and nail atrophy are present on the right second and third distal digits. He is otherwise healthy.",
+    "question": "What is the final diagnosis?",
+    "improved": false,
+    "reward": false,
+    "intervened_first_or_last": 1,
+    "failure_brief": "The agent delayed asking about the patient's nail health, which could have provided critical information sooner.",
+    "failure_index": 55,
+    "intervened_message": "Inquire about the patient's nail health earlier in the questioning process to gather critical information for diagnosis.",
+    "success_prev": false,
+    "intervened_index": 43,
+    "trial_0": {
+      "vignette_mcq": "Acrodermatitis continua of Hallopeau",
+      "vignette_frq": "The final diagnosis is pustular psoriasis.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are a patient. You do not have any medical knowledge. You have to describe your symptoms from the given case vignette based on the questions asked. Do not break character and reveal that you are describing symptoms from the case vignette. Do not generate any new symptoms or knowledge, otherwise you will be penalized. Do not reveal more information than what the question asks. Keep your answer short, to only 1 sentence. Simplify terminology used in the given paragraph to layman language.\n**Case Vignette**: A 51-year-old white man presents to the clinic with a 2-year history of a painful, recurrent rash on his fingers. He initially noticed redness, irritation, and pustules around his nails that he thought were caused by an infection. However, the rash progressed to affect the nail bed, eventually destroying his nails. On examination, well-demarcated, scaly plaques with associated pustules and nail atrophy are present on the right second and third distal digits. He is otherwise healthy."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "user",
+          "content": "I have a painful rash on my fingers that keeps coming back, with redness, irritation, and bumps around my nails."
+        },
+        {
+          "role": "assistant",
+          "content": "How long have you been experiencing this rash?"
+        },
+        {
+          "role": "user",
+          "content": "I've been dealing with this rash for about two years."
+        },
+        {
+          "role": "assistant",
+          "content": "What is your age and sex?"
+        },
+        {
+          "role": "user",
+          "content": "I am a 51-year-old man."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any triggers that worsen the rash, such as certain activities or products?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't noticed any specific triggers that make the rash worse."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any other symptoms, like itching or swelling in other areas?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any itching or swelling in other areas, just the rash on my fingers."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any previous skin conditions or allergies in the past?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't had any previous skin conditions or allergies."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you currently taking any medications or using any topical treatments?"
+        },
+        {
+          "role": "user",
+          "content": "I am not currently taking any medications or using any topical treatments."
+        },
+        {
+          "role": "assistant",
+          "content": "Is there a family history of skin conditions or allergies?"
+        },
+        {
+          "role": "user",
+          "content": "There is no family history of skin conditions or allergies that I know of."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent changes in your occupation or hobbies that involve hand exposure?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't had any recent changes in my occupation or hobbies that involve hand exposure."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you frequently wash your hands or use hand sanitizers?"
+        },
+        {
+          "role": "user",
+          "content": "I do wash my hands frequently, but I don't use hand sanitizers often."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you tried any over-the-counter treatments for the rash?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't tried any over-the-counter treatments for the rash."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any other medical conditions, such as diabetes or autoimmune disorders?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any other medical conditions like diabetes or autoimmune disorders."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any changes in your diet or lifestyle recently?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't experienced any changes in my diet or lifestyle recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any pets or have you been in contact with animals recently?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any pets and haven't been in contact with animals recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you traveled anywhere recently that could have exposed you to different environments?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't traveled anywhere recently that could have exposed me to different environments."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you work with any chemicals or irritants in your job?"
+        },
+        {
+          "role": "user",
+          "content": "I don't work with any chemicals or irritants in my job."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any changes in the appearance of the rash over time?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, the rash has progressed and now affects my nail bed, even destroying my nails."
+        },
+        {
+          "role": "assistant",
+          "content": "Is there any pain or discomfort associated with the rash, especially around the nail area?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, there is pain and discomfort around the rash, especially near my nails."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you ever been diagnosed with a fungal infection or had any nail issues in the past?"
+        },
+        {
+          "role": "user",
+          "content": "I have not been diagnosed with a fungal infection or had any nail issues in the past."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of eczema or dermatitis?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any history of eczema or dermatitis."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any changes in your nails, such as discoloration or brittleness?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, my nails have become damaged and are showing signs of atrophy."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of psoriasis or have you ever been diagnosed with it?"
+        },
+        {
+          "role": "system",
+          "content": "[*INTERVENTION*: Inquire about the patient's nail health earlier in the questioning process to gather critical information for diagnosis.]"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any history of psoriasis or have never been diagnosed with it."
+        },
+        {
+          "role": "assistant",
+          "content": "I don't have any history of psoriasis or have never been diagnosed with it."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any stress or significant life changes recently?"
+        },
+        {
+          "role": "user",
+          "content": "Have you experienced any stress or significant life changes recently?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't experienced any stress or significant life changes recently."
+        },
+        {
+          "role": "assistant",
+          "content": "I haven't experienced any stress or significant life changes recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any other skin changes on your body besides the rash on your fingers?"
+        },
+        {
+          "role": "user",
+          "content": "Have you noticed any other skin changes on your body besides the rash on your fingers?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't noticed any other skin changes on my body besides the rash on my fingers."
+        },
+        {
+          "role": "assistant",
+          "content": "I haven't noticed any other skin changes on my body besides the rash on my fingers."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent infections or illnesses?"
+        },
+        {
+          "role": "user",
+          "content": "Have you had any recent infections or illnesses?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't had any recent infections or illnesses."
+        },
+        {
+          "role": "assistant",
+          "content": "I haven't had any recent infections or illnesses."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any changes in your overall health or energy levels?"
+        },
+        {
+          "role": "user",
+          "content": "Have you experienced any changes in your overall health or energy levels?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't experienced any changes in my overall health or energy levels."
+        },
+        {
+          "role": "assistant",
+          "content": "I haven't experienced any changes in my overall health or energy levels."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any changes in your ability to perform daily activities because of the rash?"
+        },
+        {
+          "role": "user",
+          "content": "Have you noticed any changes in your ability to perform daily activities because of the rash?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, the rash has made it painful to use my fingers, affecting my daily activities."
+        },
+        {
+          "role": "assistant",
+          "content": "Yes, the rash has made it painful to use my fingers, affecting my daily activities."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you sought any medical advice or treatment for this rash before?"
+        },
+        {
+          "role": "user",
+          "content": "Have you sought any medical advice or treatment for this rash before?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't sought any medical advice or treatment for this rash before."
+        },
+        {
+          "role": "assistant",
+          "content": "I haven't sought any medical advice or treatment for this rash before."
+        },
+        {
+          "role": "assistant",
+          "content": "Is there anything else you would like to share about your symptoms or concerns?"
+        },
+        {
+          "role": "user",
+          "content": "Is there anything else you would like to share about your symptoms or concerns?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have anything else to share about my symptoms or concerns."
+        },
+        {
+          "role": "assistant",
+          "content": "I don't have anything else to share about my symptoms or concerns."
+        },
+        {
+          "role": "assistant",
+          "content": "Thank you for sharing your symptoms."
+        },
+        {
+          "role": "user",
+          "content": "Thank you for sharing your symptoms."
+        }
+      ],
+      "multiturn_mcq": "Acrodermatitis continua of Hallopeau",
+      "multiturn_frq": "The final diagnosis is likely pustular psoriasis affecting the fingers and nails.",
+      "ground_truth": "acute contact dermatitis",
+      "reward": false,
+      "singleturn_mcq": "Acrodermatitis continua of Hallopeau.",
+      "singleturn_frq": "The final diagnosis is pustular psoriasis.",
+      "summarized_conversation": "A patient presents to the clinic with a painful rash on their fingers that keeps coming back, characterized by redness, irritation, and bumps around the nails. The patient has been dealing with this rash for about two years and is a 51-year-old man. He has not noticed any specific triggers that make the rash worse and does not experience any itching or swelling in other areas, only the rash on his fingers. The patient has no previous skin conditions or allergies and is not currently taking any medications or using any topical treatments. There is no known family history of skin conditions or allergies. The patient has not had any recent changes in occupation or hobbies that involve hand exposure. He washes his hands frequently but does not use hand sanitizers often. The patient has not tried any over-the-counter treatments for the rash and does not have any other medical conditions like diabetes or autoimmune disorders. He has not experienced any changes in diet or lifestyle recently, does not have any pets, and has not been in contact with animals recently. The patient has not traveled anywhere recently that could have exposed him to different environments and does not work with any chemicals or irritants in his job. The rash has progressed and now affects the nail bed, even destroying the nails, causing pain and discomfort around the rash, especially near the nails. The patient has not been diagnosed with a fungal infection or had any nail issues in the past and has no history of eczema or dermatitis. His nails have become damaged and are showing signs of atrophy, and he has no history of psoriasis or has never been diagnosed with it. The patient has not experienced any stress or significant life changes recently. He has not noticed any other skin changes on his body besides the rash on his fingers, has not had any recent infections or illnesses, and has not experienced any changes in overall health or energy levels. The patient has noticed that the rash has made it painful to use his fingers, affecting daily activities. He has not sought any medical advice or treatment for this rash before and does not have anything else to share about his symptoms or concerns.",
+      "summarized_mcq": "Acrodermatitis continua of Hallopeau",
+      "summarized_frq": "Chronic paronychia."
+    }
+  }
+]

@@ -2,10 +2,16 @@
 import time
 from openai import AzureOpenAI
 import openai
+import os
+from openai import OpenAI
 
-client = AzureOpenAI(api_version="2023-05-15",
-                     api_key = openai.api_key,
-                     azure_endpoint=openai.api_base)
+# client = AzureOpenAI(api_version="2023-05-15",
+#                      api_key = openai.api_key,
+#                      azure_endpoint=openai.api_base)
+
+api_key = os.getenv('OPENAI_API_KEY')
+client = OpenAI(api_key=api_key)
+
 
 def call_gpt4_api(convo, max_tokens=150, depth_limit=0):
     try:

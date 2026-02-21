@@ -1,0 +1,415 @@
+[
+  {},
+  {
+    "case_id": "case_0",
+    "case_vignette": "A 22-year-old man presented with complaints of painful lesions on his penis and swelling in the left groin that started 10 days ago. He denied fever, chills, night sweats, rashes, dysuria, discharge, testicular pain, or proctitis. His female partner had been diagnosed with chlamydia one year earlier but he has not undergone evaluation. Multiple small, nontender scabbed lesions are identified in the bilateral scrotal area and on the shaft of penis. The right inguinal lymph node was tender and swollen.",
+    "question": "What is the final diagnosis?",
+    "improved": false,
+    "reward": false,
+    "intervened_first_or_last": 0,
+    "failure_brief": "The agent did not ask about the duration of the symptoms, which is important for diagnosis.",
+    "failure_index": 1,
+    "intervened_message": "Make sure to ask about the duration of symptoms to better understand the condition's progression.",
+    "success_prev": false,
+    "intervened_index": 1,
+    "trial_0": {
+      "vignette_mcq": "Lymphogranuloma venereum",
+      "vignette_frq": "The final diagnosis is genital herpes.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are a patient. You do not have any medical knowledge. You have to describe your symptoms from the given case vignette based on the questions asked. Do not break character and reveal that you are describing symptoms from the case vignette. Do not generate any new symptoms or knowledge, otherwise you will be penalized. Do not reveal more information than what the question asks. Keep your answer short, to only 1 sentence. Simplify terminology used in the given paragraph to layman language.\n**Case Vignette**: A 22-year-old man presented with complaints of painful lesions on his penis and swelling in the left groin that started 10 days ago. He denied fever, chills, night sweats, rashes, dysuria, discharge, testicular pain, or proctitis. His female partner had been diagnosed with chlamydia one year earlier but he has not undergone evaluation. Multiple small, nontender scabbed lesions are identified in the bilateral scrotal area and on the shaft of penis. The right inguinal lymph node was tender and swollen."
+        },
+        {
+          "role": "user",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "system",
+          "content": "[*INTERVENTION*: Make sure to ask about the duration of symptoms to better understand the condition's progression.]"
+        },
+        {
+          "role": "user",
+          "content": "I have painful sores on my penis and swelling in my left groin that started about 10 days ago."
+        },
+        {
+          "role": "assistant",
+          "content": "I have painful sores on my penis and swelling in my left groin that started about 10 days ago."
+        },
+        {
+          "role": "assistant",
+          "content": "I have painful sores on my penis and swelling in my left groin that started about 10 days ago."
+        },
+        {
+          "role": "user",
+          "content": "I have painful sores on my penis and swelling in my left groin that started about 10 days ago."
+        }
+      ],
+      "multiturn_mcq": "Lymphogranuloma venereum.",
+      "multiturn_frq": "The final diagnosis is likely a sexually transmitted infection, possibly herpes.",
+      "ground_truth": "lymphogranuloma venereum",
+      "reward": false,
+      "singleturn_mcq": "Lymphogranuloma venereum.",
+      "singleturn_frq": "I have painful sores on my penis and swelling in my left groin that started about 10 days ago.",
+      "summarized_conversation": "A patient presents with symptoms including painful sores on the penis and swelling in the left groin that began about 10 days ago.",
+      "summarized_mcq": "Herpes",
+      "summarized_frq": "Herpes genitalis."
+    }
+  },
+  {
+    "case_id": "case_0",
+    "case_vignette": "A 22-year-old man presented with complaints of painful lesions on his penis and swelling in the left groin that started 10 days ago. He denied fever, chills, night sweats, rashes, dysuria, discharge, testicular pain, or proctitis. His female partner had been diagnosed with chlamydia one year earlier but he has not undergone evaluation. Multiple small, nontender scabbed lesions are identified in the bilateral scrotal area and on the shaft of penis. The right inguinal lymph node was tender and swollen.",
+    "question": "What is the final diagnosis?",
+    "improved": false,
+    "reward": false,
+    "intervened_first_or_last": 1,
+    "failure_brief": "The agent failed to ask about the patient's sexual history, which is crucial for diagnosing STIs.",
+    "failure_index": 10,
+    "intervened_message": "Always inquire about the patient's sexual history, including the nature of recent sexual activity and partner's health status.",
+    "success_prev": false,
+    "intervened_index": 10,
+    "trial_0": {
+      "vignette_mcq": "Lymphogranuloma venereum",
+      "vignette_frq": "The final diagnosis is genital herpes.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are a patient. You do not have any medical knowledge. You have to describe your symptoms from the given case vignette based on the questions asked. Do not break character and reveal that you are describing symptoms from the case vignette. Do not generate any new symptoms or knowledge, otherwise you will be penalized. Do not reveal more information than what the question asks. Keep your answer short, to only 1 sentence. Simplify terminology used in the given paragraph to layman language.\n**Case Vignette**: A 22-year-old man presented with complaints of painful lesions on his penis and swelling in the left groin that started 10 days ago. He denied fever, chills, night sweats, rashes, dysuria, discharge, testicular pain, or proctitis. His female partner had been diagnosed with chlamydia one year earlier but he has not undergone evaluation. Multiple small, nontender scabbed lesions are identified in the bilateral scrotal area and on the shaft of penis. The right inguinal lymph node was tender and swollen."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "assistant",
+          "content": "I have painful sores on my penis and swelling in my left groin."
+        },
+        {
+          "role": "user",
+          "content": "How old are you?"
+        },
+        {
+          "role": "assistant",
+          "content": "I am 22 years old."
+        },
+        {
+          "role": "user",
+          "content": "Are you male or female?"
+        },
+        {
+          "role": "assistant",
+          "content": "I am male."
+        },
+        {
+          "role": "user",
+          "content": "Have you experienced any fever or flu-like symptoms recently?"
+        },
+        {
+          "role": "assistant",
+          "content": "No, I have not experienced any fever or flu-like symptoms recently."
+        },
+        {
+          "role": "user",
+          "content": "Have you had any recent sexual activity or new sexual partners?"
+        },
+        {
+          "role": "assistant",
+          "content": "Yes, I have had recent sexual activity, but I have not had any new sexual partners."
+        },
+        {
+          "role": "system",
+          "content": "[*INTERVENTION*: Always inquire about the patient's sexual history, including the nature of recent sexual activity and partner's health status.]"
+        },
+        {
+          "role": "user",
+          "content": "I have been with my female partner, who was diagnosed with chlamydia a year ago."
+        },
+        {
+          "role": "assistant",
+          "content": "I have been with my female partner, who was diagnosed with chlamydia a year ago."
+        },
+        {
+          "role": "assistant",
+          "content": "I have been with my female partner, who was diagnosed with chlamydia a year ago."
+        },
+        {
+          "role": "user",
+          "content": "I have been with my female partner, who was diagnosed with chlamydia a year ago."
+        }
+      ],
+      "multiturn_mcq": "Lymphogranuloma venereum.",
+      "multiturn_frq": "The final diagnosis is likely genital herpes.",
+      "ground_truth": "lymphogranuloma venereum",
+      "reward": false,
+      "singleturn_mcq": "Lymphogranuloma venereum.",
+      "singleturn_frq": "The final diagnosis is likely genital herpes.",
+      "summarized_conversation": "A patient presents to the clinic with several inquiries. The patient asks about their age, gender, and whether they have experienced any fever or flu-like symptoms recently. The patient reports having had recent sexual activity with a female partner, who was diagnosed with chlamydia a year ago.",
+      "summarized_mcq": "Lymphogranuloma venereum",
+      "summarized_frq": "The final diagnosis is likely a sexually transmitted infection (STI), possibly chlamydia or another related infection."
+    }
+  },
+  {
+    "case_id": "case_1",
+    "case_vignette": "A 51-year-old white man presents to the clinic with a 2-year history of a painful, recurrent rash on his fingers. He initially noticed redness, irritation, and pustules around his nails that he thought were caused by an infection. However, the rash progressed to affect the nail bed, eventually destroying his nails. On examination, well-demarcated, scaly plaques with associated pustules and nail atrophy are present on the right second and third distal digits. He is otherwise healthy.",
+    "question": "What is the final diagnosis?",
+    "improved": false,
+    "reward": false,
+    "intervened_first_or_last": 0,
+    "failure_brief": "The agent failed to ask about the patient's occupational exposure, which could provide critical context for the rash's recurrence.",
+    "failure_index": 13,
+    "intervened_message": "Remember to inquire about the patient's occupation and any potential exposure to irritants that could affect their skin condition.",
+    "success_prev": false,
+    "intervened_index": 14,
+    "trial_0": {
+      "vignette_mcq": "Acrodermatitis continua of Hallopeau",
+      "vignette_frq": "The final diagnosis is pustular psoriasis.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are a patient. You do not have any medical knowledge. You have to describe your symptoms from the given case vignette based on the questions asked. Do not break character and reveal that you are describing symptoms from the case vignette. Do not generate any new symptoms or knowledge, otherwise you will be penalized. Do not reveal more information than what the question asks. Keep your answer short, to only 1 sentence. Simplify terminology used in the given paragraph to layman language.\n**Case Vignette**: A 51-year-old white man presents to the clinic with a 2-year history of a painful, recurrent rash on his fingers. He initially noticed redness, irritation, and pustules around his nails that he thought were caused by an infection. However, the rash progressed to affect the nail bed, eventually destroying his nails. On examination, well-demarcated, scaly plaques with associated pustules and nail atrophy are present on the right second and third distal digits. He is otherwise healthy."
+        },
+        {
+          "role": "user",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "assistant",
+          "content": "I have a painful rash on my fingers that keeps coming back, with redness, irritation, and bumps around my nails."
+        },
+        {
+          "role": "user",
+          "content": "How long have you been experiencing these symptoms?"
+        },
+        {
+          "role": "assistant",
+          "content": "I've been experiencing these symptoms for about 2 years."
+        },
+        {
+          "role": "user",
+          "content": "What is your age and sex?"
+        },
+        {
+          "role": "assistant",
+          "content": "I am 51 years old and male."
+        },
+        {
+          "role": "user",
+          "content": "Have you noticed any triggers that worsen the rash, such as certain activities or products?"
+        },
+        {
+          "role": "assistant",
+          "content": "I haven't noticed any specific triggers that worsen the rash."
+        },
+        {
+          "role": "user",
+          "content": "Do you have any history of allergies or skin conditions, such as eczema or psoriasis?"
+        },
+        {
+          "role": "assistant",
+          "content": "I don't have any history of allergies or skin conditions like eczema or psoriasis."
+        },
+        {
+          "role": "user",
+          "content": "Are you currently taking any medications or using any topical treatments for your rash?"
+        },
+        {
+          "role": "assistant",
+          "content": "I am not currently taking any medications or using any topical treatments for my rash."
+        },
+        {
+          "role": "user",
+          "content": "Have you had any recent changes in your work or hobbies that involve exposure to chemicals or irritants?"
+        },
+        {
+          "role": "assistant",
+          "content": "I haven't had any recent changes in my work or hobbies that involve exposure to chemicals or irritants."
+        },
+        {
+          "role": "system",
+          "content": "[*INTERVENTION*: Remember to inquire about the patient's occupation and any potential exposure to irritants that could affect their skin condition.]"
+        },
+        {
+          "role": "user",
+          "content": "I haven't mentioned my occupation or any potential exposure to irritants that could affect my skin condition."
+        },
+        {
+          "role": "assistant",
+          "content": "I haven't mentioned my occupation or any potential exposure to irritants that could affect my skin condition."
+        },
+        {
+          "role": "assistant",
+          "content": "I haven't mentioned my occupation or any potential exposure to irritants that could affect my skin condition."
+        },
+        {
+          "role": "user",
+          "content": "I haven't mentioned my occupation or any potential exposure to irritants that could affect my skin condition."
+        }
+      ],
+      "multiturn_mcq": "Acrodermatitis continua of Hallopeau.",
+      "multiturn_frq": "The final diagnosis is pustular psoriasis affecting the fingers and nails.",
+      "ground_truth": "acute contact dermatitis",
+      "reward": false,
+      "singleturn_mcq": "Acrodermatitis continua of Hallopeau.",
+      "singleturn_frq": "The final diagnosis is pustular psoriasis.",
+      "summarized_conversation": "A patient presents to the clinic with several concerns regarding their symptoms. The patient is inquiring about the symptoms they are facing today and how long they have been experiencing these symptoms. The patient provides their age and sex. They are asked if they have noticed any triggers that worsen the rash, such as certain activities or products. The patient is also questioned about any history of allergies or skin conditions, such as eczema or psoriasis. Additionally, the patient is asked if they are currently taking any medications or using any topical treatments for their rash. The patient is further questioned about any recent changes in their work or hobbies that involve exposure to chemicals or irritants. However, the patient has not mentioned their occupation or any potential exposure to irritants that could affect their skin condition.",
+      "summarized_mcq": "Acute contact dermatitis",
+      "summarized_frq": "Insufficient information to provide a final diagnosis."
+    }
+  },
+  {
+    "case_id": "case_1",
+    "case_vignette": "A 51-year-old white man presents to the clinic with a 2-year history of a painful, recurrent rash on his fingers. He initially noticed redness, irritation, and pustules around his nails that he thought were caused by an infection. However, the rash progressed to affect the nail bed, eventually destroying his nails. On examination, well-demarcated, scaly plaques with associated pustules and nail atrophy are present on the right second and third distal digits. He is otherwise healthy.",
+    "question": "What is the final diagnosis?",
+    "improved": false,
+    "reward": false,
+    "intervened_first_or_last": 1,
+    "failure_brief": "The agent did not ask about the duration and severity of the nail changes, which are important for understanding the progression of the condition.",
+    "failure_index": 25,
+    "intervened_message": "Make sure to ask about the duration and severity of any changes in the nails to better assess the condition.",
+    "success_prev": false,
+    "intervened_index": 26,
+    "trial_0": {
+      "vignette_mcq": "Acrodermatitis continua of Hallopeau",
+      "vignette_frq": "The final diagnosis is pustular psoriasis.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are a patient. You do not have any medical knowledge. You have to describe your symptoms from the given case vignette based on the questions asked. Do not break character and reveal that you are describing symptoms from the case vignette. Do not generate any new symptoms or knowledge, otherwise you will be penalized. Do not reveal more information than what the question asks. Keep your answer short, to only 1 sentence. Simplify terminology used in the given paragraph to layman language.\n**Case Vignette**: A 51-year-old white man presents to the clinic with a 2-year history of a painful, recurrent rash on his fingers. He initially noticed redness, irritation, and pustules around his nails that he thought were caused by an infection. However, the rash progressed to affect the nail bed, eventually destroying his nails. On examination, well-demarcated, scaly plaques with associated pustules and nail atrophy are present on the right second and third distal digits. He is otherwise healthy."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "user",
+          "content": "I have a painful rash on my fingers that keeps coming back, with redness, irritation, and bumps around my nails."
+        },
+        {
+          "role": "assistant",
+          "content": "How long have you been experiencing these symptoms?"
+        },
+        {
+          "role": "user",
+          "content": "I've been experiencing these symptoms for about 2 years."
+        },
+        {
+          "role": "assistant",
+          "content": "What is your age and sex?"
+        },
+        {
+          "role": "user",
+          "content": "I am 51 years old and male."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any triggers that worsen the rash, such as certain activities or products?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't noticed any specific triggers that worsen the rash."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of allergies or skin conditions, such as eczema or psoriasis?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any history of allergies or skin conditions like eczema or psoriasis."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you currently taking any medications or using any topical treatments for your rash?"
+        },
+        {
+          "role": "user",
+          "content": "I am not currently taking any medications or using any topical treatments for my rash."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent changes in your work or hobbies that involve exposure to chemicals or irritants?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't had any recent changes in my work or hobbies that involve exposure to chemicals or irritants."
+        },
+        {
+          "role": "user",
+          "content": "Is there any family history of skin conditions or autoimmune diseases?"
+        },
+        {
+          "role": "assistant",
+          "content": "I don't have any family history of skin conditions or autoimmune diseases."
+        },
+        {
+          "role": "user",
+          "content": "Do you experience any itching or burning sensations along with the rash?"
+        },
+        {
+          "role": "assistant",
+          "content": "Yes, I do experience itching and burning sensations along with the rash."
+        },
+        {
+          "role": "user",
+          "content": "Have you tried any over-the-counter treatments or home remedies for the rash?"
+        },
+        {
+          "role": "assistant",
+          "content": "No, I haven't tried any over-the-counter treatments or home remedies for the rash."
+        },
+        {
+          "role": "user",
+          "content": "Is the rash localized only to your fingers, or does it appear on other parts of your body as well?"
+        },
+        {
+          "role": "assistant",
+          "content": "The rash is localized only to my fingers."
+        },
+        {
+          "role": "user",
+          "content": "Do you have any other symptoms, such as fever or joint pain?"
+        },
+        {
+          "role": "assistant",
+          "content": "I do not have any other symptoms like fever or joint pain."
+        },
+        {
+          "role": "user",
+          "content": "Have you noticed any changes in your nails, such as discoloration or separation from the nail bed?"
+        },
+        {
+          "role": "assistant",
+          "content": "Yes, I have noticed changes in my nails, including destruction and separation from the nail bed."
+        },
+        {
+          "role": "system",
+          "content": "[*INTERVENTION*: Make sure to ask about the duration and severity of any changes in the nails to better assess the condition.]"
+        },
+        {
+          "role": "user",
+          "content": "How long have you noticed these changes in your nails, and how severe are they?"
+        },
+        {
+          "role": "assistant",
+          "content": "How long have you noticed these changes in your nails, and how severe are they?"
+        },
+        {
+          "role": "assistant",
+          "content": "I have noticed these changes in my nails for about 2 years, and they are quite severe."
+        },
+        {
+          "role": "user",
+          "content": "I have noticed these changes in my nails for about 2 years, and they are quite severe."
+        }
+      ],
+      "multiturn_mcq": "Acrodermatitis continua of Hallopeau.",
+      "multiturn_frq": "The final diagnosis is pustular psoriasis affecting the fingers and nails.",
+      "ground_truth": "acute contact dermatitis",
+      "reward": false,
+      "singleturn_mcq": "Acrodermatitis continua of Hallopeau.",
+      "singleturn_frq": "The final diagnosis is pustular psoriasis.",
+      "summarized_conversation": "A patient presents with a painful rash on their fingers that keeps coming back, accompanied by redness, irritation, and bumps around the nails. The patient has been experiencing these symptoms for about 2 years. They are 51 years old and male. The patient has not noticed any specific triggers that worsen the rash and has no history of allergies or skin conditions such as eczema or psoriasis. Currently, the patient is not taking any medications or using any topical treatments for the rash. There have been no recent changes in their work or hobbies that involve exposure to chemicals or irritants. The patient is asked if there is any family history of skin conditions or autoimmune diseases, if they experience any itching or burning sensations along with the rash, and if they have tried any over-the-counter treatments or home remedies for the rash. It is also inquired whether the rash is localized only to their fingers or if it appears on other parts of the body as well. The patient is asked about any other symptoms, such as fever or joint pain, and if they have noticed any changes in their nails, such as discoloration or separation from the nail bed. The patient reports that they have noticed these changes in their nails for about 2 years, and they are quite severe.",
+      "summarized_mcq": "Acrodermatitis continua of Hallopeau",
+      "summarized_frq": "The final diagnosis is likely Psoriatic Arthritis with Nail Involvement."
+    }
+  }
+]

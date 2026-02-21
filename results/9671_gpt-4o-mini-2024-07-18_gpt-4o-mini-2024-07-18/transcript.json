@@ -1,0 +1,203 @@
+[
+  {},
+  {
+    "case_id": "case_0",
+    "case_vignette": "A 22-year-old man presented with complaints of painful lesions on his penis and swelling in the left groin that started 10 days ago. He denied fever, chills, night sweats, rashes, dysuria, discharge, testicular pain, or proctitis. His female partner had been diagnosed with chlamydia one year earlier but he has not undergone evaluation. Multiple small, nontender scabbed lesions are identified in the bilateral scrotal area and on the shaft of penis. The right inguinal lymph node was tender and swollen.",
+    "question": "What is the final diagnosis?",
+    "trial_0": {
+      "vignette_mcq": "Lymphogranuloma venereum",
+      "vignette_frq": "The final diagnosis is genital herpes.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are an AI doctor specializing in Dermatology. Arrive at a diagnosis of a patient's medical condition. Ask only one question at a time, and it should not be more than 1 line. Continue asking questions until you're 100% confident of the diagnosis. Do not ask the same question multiple times. Ask different questions to cover more information. The questions should cover age and sex of the patient, current symptoms, medical history of illness and medications, and relevant family history if necessary. Keep your questions short and brief to not confuse the patient.  After you're done asking questions, give the final diagnosis as a short response. Do not explain, only give the diagnosis name. You must state '**Final Diagnosis:**' at the beginning of your response, otherwise you will be penalized. You must give only 1 diagnosis otherwise you will be penalized."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "user",
+          "content": "I have painful sores on my penis and swelling in my left groin."
+        },
+        {
+          "role": "assistant",
+          "content": "How old are you?"
+        },
+        {
+          "role": "user",
+          "content": "I am 22 years old."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you male or female?"
+        },
+        {
+          "role": "user",
+          "content": "I am male."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any similar symptoms in the past?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not experienced similar symptoms in the past."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent sexual activity?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have had recent sexual activity."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any other symptoms, such as fever or discharge?"
+        },
+        {
+          "role": "user",
+          "content": "No, I do not have any fever or discharge."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you currently taking any medications or have any known allergies?"
+        },
+        {
+          "role": "user",
+          "content": "I am not currently taking any medications and I do not have any known allergies."
+        },
+        {
+          "role": "assistant",
+          "content": "Is there a history of sexually transmitted infections in your family or personal history?"
+        },
+        {
+          "role": "user",
+          "content": "My female partner was diagnosed with chlamydia a year ago, but I have not been evaluated."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any changes in the appearance of the sores, such as blisters or crusting?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have multiple small, scabbed lesions on my penis and scrotal area."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any pain or discomfort when urinating?"
+        },
+        {
+          "role": "user",
+          "content": "No, I do not have any pain or discomfort when urinating."
+        },
+        {
+          "role": "assistant",
+          "content": "Final Diagnosis: Genital Herpes."
+        }
+      ],
+      "multiturn_mcq": "**Final Diagnosis:** Herpes",
+      "multiturn_frq": "**Final Diagnosis:** Genital herpes.",
+      "ground_truth": "lymphogranuloma venereum",
+      "reward": false,
+      "singleturn_mcq": "**Final Diagnosis:** Herpes",
+      "singleturn_frq": "**Final Diagnosis:** Herpes Simplex Virus Infection.",
+      "summarized_conversation": "A patient presents with painful sores on the penis and swelling in the left groin. The patient is 22 years old and male. The patient has not experienced similar symptoms in the past. The patient has had recent sexual activity but does not have any fever or discharge. The patient is not currently taking any medications and has no known allergies. The patient's female partner was diagnosed with chlamydia a year ago, but the patient has not been evaluated. The patient reports multiple small, scabbed lesions on the penis and scrotal area. The patient does not have any pain or discomfort when urinating.",
+      "summarized_mcq": "Lymphogranuloma venereum",
+      "summarized_frq": "Genital herpes."
+    }
+  },
+  {
+    "case_id": "case_1",
+    "case_vignette": "A 51-year-old white man presents to the clinic with a 2-year history of a painful, recurrent rash on his fingers. He initially noticed redness, irritation, and pustules around his nails that he thought were caused by an infection. However, the rash progressed to affect the nail bed, eventually destroying his nails. On examination, well-demarcated, scaly plaques with associated pustules and nail atrophy are present on the right second and third distal digits. He is otherwise healthy.",
+    "question": "What is the final diagnosis?",
+    "trial_0": {
+      "vignette_mcq": "Acrodermatitis continua of Hallopeau",
+      "vignette_frq": "The final diagnosis is pustular psoriasis.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are an AI doctor specializing in Dermatology. Arrive at a diagnosis of a patient's medical condition. Ask only one question at a time, and it should not be more than 1 line. Continue asking questions until you're 100% confident of the diagnosis. Do not ask the same question multiple times. Ask different questions to cover more information. The questions should cover age and sex of the patient, current symptoms, medical history of illness and medications, and relevant family history if necessary. Keep your questions short and brief to not confuse the patient.  After you're done asking questions, give the final diagnosis as a short response. Do not explain, only give the diagnosis name. You must state '**Final Diagnosis:**' at the beginning of your response, otherwise you will be penalized. You must give only 1 diagnosis otherwise you will be penalized."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "user",
+          "content": "I have a painful rash on my fingers that keeps coming back, with redness, irritation, and bumps around my nails."
+        },
+        {
+          "role": "assistant",
+          "content": "How old are you, and what is your sex?"
+        },
+        {
+          "role": "user",
+          "content": "I am 51 years old and I am male."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any previous skin conditions or allergies?"
+        },
+        {
+          "role": "user",
+          "content": "No, I haven't had any previous skin conditions or allergies."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you currently taking any medications or using any topical treatments?"
+        },
+        {
+          "role": "user",
+          "content": "No, I am not currently taking any medications or using any topical treatments."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you been exposed to any irritants or allergens at work or home recently?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't been exposed to any irritants or allergens at work or home recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have a family history of skin conditions or autoimmune diseases?"
+        },
+        {
+          "role": "user",
+          "content": "No, there is no family history of skin conditions or autoimmune diseases."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any changes in your nails or any other areas of your skin?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, my nails have been affected and are getting destroyed, and I have scaly patches with bumps on my fingers."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you experience any itching or burning sensations in the affected areas?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I do experience itching and burning sensations in the affected areas."
+        },
+        {
+          "role": "assistant",
+          "content": "Final Diagnosis: Psoriasis."
+        }
+      ],
+      "multiturn_mcq": "**Final Diagnosis:** Acrodermatitis continua of Hallopeau",
+      "multiturn_frq": "**Final Diagnosis:** Psoriasis.",
+      "ground_truth": "acute contact dermatitis",
+      "reward": false,
+      "singleturn_mcq": "**Final Diagnosis:** Paronychia",
+      "singleturn_frq": "**Final Diagnosis:** Contact Dermatitis",
+      "summarized_conversation": "A patient presents to the clinic with a painful rash on their fingers that keeps coming back, characterized by redness, irritation, and bumps around the nails. The patient is 51 years old and male. The patient has not had any previous skin conditions or allergies. Additionally, the patient is not currently taking any medications or using any topical treatments. There has been no recent exposure to irritants or allergens at work or home. There is no family history of skin conditions or autoimmune diseases. The patient's nails have been affected and are deteriorating, and they have scaly patches with bumps on their fingers. The patient also experiences itching and burning sensations in the affected areas.",
+      "summarized_mcq": "Acrodermatitis continua of Hallopeau",
+      "summarized_frq": "The final diagnosis is psoriasis."
+    }
+  }
+]

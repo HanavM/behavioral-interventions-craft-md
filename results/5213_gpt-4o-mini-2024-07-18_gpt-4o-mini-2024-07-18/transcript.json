@@ -1,0 +1,127 @@
+[
+  {},
+  {
+    "case_id": "case_0",
+    "case_vignette": "A 22-year-old man presented with complaints of painful lesions on his penis and swelling in the left groin that started 10 days ago. He denied fever, chills, night sweats, rashes, dysuria, discharge, testicular pain, or proctitis. His female partner had been diagnosed with chlamydia one year earlier but he has not undergone evaluation. Multiple small, nontender scabbed lesions are identified in the bilateral scrotal area and on the shaft of penis. The right inguinal lymph node was tender and swollen.",
+    "question": "What is the final diagnosis?",
+    "trial_0": {
+      "vignette_mcq": "Lymphogranuloma venereum",
+      "vignette_frq": "The final diagnosis is likely genital herpes.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are an AI doctor specializing in Dermatology. Arrive at a diagnosis of a patient's medical condition. Ask only one question at a time, and it should not be more than 1 line. Continue asking questions until you're 100% confident of the diagnosis. Do not ask the same question multiple times. Ask different questions to cover more information. The questions should cover age and sex of the patient, current symptoms, medical history of illness and medications, and relevant family history if necessary. Keep your questions short and brief to not confuse the patient.  After you're done asking questions, give the final diagnosis as a short response. Do not explain, only give the diagnosis name. You must state '**Final Diagnosis:**' at the beginning of your response, otherwise you will be penalized. You must give only 1 diagnosis otherwise you will be penalized."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "user",
+          "content": "I have painful sores on my penis and swelling in my left groin."
+        },
+        {
+          "role": "assistant",
+          "content": "How old are you?"
+        },
+        {
+          "role": "user",
+          "content": "I am 22 years old."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you male or female?"
+        },
+        {
+          "role": "user",
+          "content": "I am male."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any fever or flu-like symptoms recently?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not experienced any fever or flu-like symptoms recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of sexually transmitted infections?"
+        },
+        {
+          "role": "user",
+          "content": "My female partner was diagnosed with chlamydia a year ago, but I have not been checked."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you currently taking any medications or have any chronic illnesses?"
+        },
+        {
+          "role": "user",
+          "content": "I am not taking any medications and do not have any chronic illnesses."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent sexual encounters or changes in sexual partners?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have had recent sexual encounters."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any lesions or sores in other areas of your body?"
+        },
+        {
+          "role": "user",
+          "content": "No, I only have lesions on my penis and in the scrotal area."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any discharge from the sores or any unusual discharge from your penis?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not noticed any discharge from the sores or any unusual discharge from my penis."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of genital herpes or cold sores?"
+        },
+        {
+          "role": "user",
+          "content": "I do not have any history of genital herpes or cold sores."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any itching or burning sensations in the affected areas?"
+        },
+        {
+          "role": "user",
+          "content": "I have not experienced any itching or burning sensations in the affected areas."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent injuries or trauma to the genital area?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not had any recent injuries or trauma to the genital area."
+        },
+        {
+          "role": "assistant",
+          "content": "Final Diagnosis: Genital herpes."
+        }
+      ],
+      "multiturn_mcq": "**Final Diagnosis:** Lymphogranuloma venereum",
+      "multiturn_frq": "**Final Diagnosis:** Genital herpes.",
+      "ground_truth": "lymphogranuloma venereum",
+      "success": false,
+      "singleturn_mcq": "**Final Diagnosis:** Herpes",
+      "singleturn_frq": "**Final Diagnosis:** Herpes Simplex Virus Infection.",
+      "summarized_conversation": "A patient presents to the clinic with painful sores on his penis and swelling in his left groin. The patient is 22 years old and male. He reports that he has not experienced any fever or flu-like symptoms recently. The patient's female partner was diagnosed with chlamydia a year ago, but he has not been checked. He is not taking any medications and does not have any chronic illnesses. The patient confirms that he has had recent sexual encounters. He states that he only has lesions on his penis and in the scrotal area, and he has not noticed any discharge from the sores or any unusual discharge from his penis. The patient has no history of genital herpes or cold sores and has not experienced any itching or burning sensations in the affected areas. He also reports that he has not had any recent injuries or trauma to the genital area.",
+      "summarized_mcq": "Lymphogranuloma venereum",
+      "summarized_frq": "The final diagnosis is likely genital herpes."
+    }
+  }
+]

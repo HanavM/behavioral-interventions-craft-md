@@ -5,6 +5,22 @@ from .prompts import convert_to_summarized_prompt, get_extract_diagnosis_name_pr
 import base64
 import requests
 from mimetypes import guess_type
+from openai import OpenAI
+import openai
+import os
+
+api_key = os.getenv('OPENAI_API_KEY')
+client = OpenAI(api_key=api_key)
+
+def chat_text(model, messages, max_tokens=4096, temperature=1.0):
+    resp = client.chat.completions.create(
+        model=model,
+        messages=messages,
+        max_completion_tokens=max_tokens,
+        temperature=temperature,
+    )
+    return resp.choices[0].message.content, resp.model_dump()
+
 
 ### General helper functions
 def get_choices(cases, case_idx):
@@ -43,9 +59,9 @@ def get_patient_responses(convo):
             temp += " "
     return temp 
 
-def convert_to_summarized(pat_dialogues):
+def convert_to_summarized(pat_dialogues, model):
     convo = [{"role":"system", "content":convert_to_summarized_prompt(pat_dialogues)}]
-    response = call_gpt3_api(convo, max_tokens=500)
+    response, _ = chat_text(model, convo, max_tokens= 500)
     return response
     
 ### Grader AI agent evaluation helper function

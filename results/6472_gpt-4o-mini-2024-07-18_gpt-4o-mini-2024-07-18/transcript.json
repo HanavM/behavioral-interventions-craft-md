@@ -1,0 +1,491 @@
+[
+  {},
+  {
+    "case_id": "case_0",
+    "case_vignette": "A 22-year-old man presented with complaints of painful lesions on his penis and swelling in the left groin that started 10 days ago. He denied fever, chills, night sweats, rashes, dysuria, discharge, testicular pain, or proctitis. His female partner had been diagnosed with chlamydia one year earlier but he has not undergone evaluation. Multiple small, nontender scabbed lesions are identified in the bilateral scrotal area and on the shaft of penis. The right inguinal lymph node was tender and swollen.",
+    "question": "What is the final diagnosis?",
+    "trial_0": {
+      "vignette_mcq": "Lymphogranuloma venereum",
+      "vignette_frq": "The final diagnosis is genital herpes.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are an AI doctor specializing in Dermatology. Arrive at a diagnosis of a patient's medical condition. Ask only one question at a time, and it should not be more than 1 line. Continue asking questions until you're 100% confident of the diagnosis. Do not ask the same question multiple times. Ask different questions to cover more information. The questions should cover age and sex of the patient, current symptoms, medical history of illness and medications, and relevant family history if necessary. Keep your questions short and brief to not confuse the patient.  After you're done asking questions, give the final diagnosis as a short response. Do not explain, only give the diagnosis name. You must state '**Final Diagnosis:**' at the beginning of your response, otherwise you will be penalized. You must give only 1 diagnosis otherwise you will be penalized. Note that you only have 40 turns, so ask only the necessary questions and make sure your conversation is brief. As the doctor, you may also get one message from an admin during your conversation with the tag [*INTERVENTION*] that gives you advice on how to approach the conversation."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "user",
+          "content": "I have painful sores on my penis and swelling in my left groin."
+        },
+        {
+          "role": "assistant",
+          "content": "How old are you?"
+        },
+        {
+          "role": "user",
+          "content": "I am 22 years old."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you male or female?"
+        },
+        {
+          "role": "user",
+          "content": "I am male."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any fever or flu-like symptoms recently?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not experienced any fever or flu-like symptoms recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent sexual activity or new sexual partners?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have had recent sexual activity, but I have not had any new sexual partners."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of sexually transmitted infections (STIs)?"
+        },
+        {
+          "role": "user",
+          "content": "My female partner was diagnosed with chlamydia a year ago, but I have not been checked for STIs."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you currently taking any medications or have any allergies?"
+        },
+        {
+          "role": "user",
+          "content": "I am not currently taking any medications and I do not have any known allergies."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any discharge from the sores or any unusual odor?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not noticed any discharge from the sores or any unusual odor."
+        },
+        {
+          "role": "assistant",
+          "content": "Do the sores have any crusting or blistering appearance?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, the sores have a scabbed appearance."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any itching or burning sensations in the affected area?"
+        },
+        {
+          "role": "user",
+          "content": "I have not experienced any itching or burning sensations in the affected area."
+        },
+        {
+          "role": "assistant",
+          "content": "Is there any history of similar sores or skin issues in your family?"
+        },
+        {
+          "role": "user",
+          "content": "I do not have any history of similar sores or skin issues in my family."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent injuries or trauma to the genital area?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not had any recent injuries or trauma to the genital area."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any other symptoms, such as swollen lymph nodes elsewhere in your body?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have a swollen and tender lymph node in my right groin."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any changes in your overall health, such as weight loss or fatigue?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not noticed any changes in my overall health, such as weight loss or fatigue."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any rashes or sores in other areas of your body?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not had any rashes or sores in other areas of my body."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of herpes or cold sores?"
+        },
+        {
+          "role": "user",
+          "content": "I do not have any history of herpes or cold sores."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you recently traveled or been in contact with anyone who has had similar symptoms?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not recently traveled or been in contact with anyone who has had similar symptoms."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of autoimmune diseases or skin conditions?"
+        },
+        {
+          "role": "user",
+          "content": "No, I do not have any history of autoimmune diseases or skin conditions."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any pain during urination?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not experienced any pain during urination."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of genital warts or HPV?"
+        },
+        {
+          "role": "user",
+          "content": "I do not have any history of genital warts or HPV."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any changes in the size or number of the sores since they first appeared?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have multiple small sores that have been present since they first appeared."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of contact dermatitis or allergic reactions in the genital area?"
+        },
+        {
+          "role": "user",
+          "content": "No, I do not have any history of contact dermatitis or allergic reactions in the genital area."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent vaccinations or medical procedures?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not had any recent vaccinations or medical procedures."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of psoriasis or eczema?"
+        },
+        {
+          "role": "user",
+          "content": "No, I do not have any history of psoriasis or eczema."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any joint pain or swelling recently?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not experienced any joint pain or swelling recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of syphilis or other STIs?"
+        },
+        {
+          "role": "user",
+          "content": "No, I do not have any history of syphilis or other STIs."
+        },
+        {
+          "role": "assistant",
+          "content": "Based on your symptoms and history, do you have any known exposure to herpes simplex virus?"
+        },
+        {
+          "role": "user",
+          "content": "I do not have any known exposure to herpes simplex virus."
+        },
+        {
+          "role": "assistant",
+          "content": "**Final Diagnosis:** Genital herpes."
+        }
+      ],
+      "multiturn_mcq": "**Final Diagnosis:** Lymphogranuloma venereum",
+      "multiturn_frq": "**Final Diagnosis:** Genital herpes.",
+      "ground_truth": "lymphogranuloma venereum",
+      "reward": false,
+      "singleturn_mcq": "**Final Diagnosis:** Herpes",
+      "singleturn_frq": "**Final Diagnosis:** Herpes Simplex Virus Infection.",
+      "summarized_conversation": "A patient presents to the clinic with painful sores on the penis and swelling in the left groin. The patient is 22 years old and male. The patient has not experienced any fever or flu-like symptoms recently. There has been recent sexual activity, but the patient has not had any new sexual partners. The patient's female partner was diagnosed with chlamydia a year ago, but the patient has not been checked for STIs. The patient is not currently taking any medications and has no known allergies. There has been no discharge from the sores or any unusual odor. The sores have a scabbed appearance, and the patient has not experienced any itching or burning sensations in the affected area. There is no history of similar sores or skin issues in the patient's family. The patient has not had any recent injuries or trauma to the genital area. There is a swollen and tender lymph node in the right groin. The patient has not noticed any changes in overall health, such as weight loss or fatigue. There have been no rashes or sores in other areas of the body. The patient has no history of herpes or cold sores. There has been no recent travel or contact with anyone who has had similar symptoms. The patient does not have any history of autoimmune diseases or skin conditions. There has been no pain during urination. The patient has no history of genital warts or HPV. There are multiple small sores that have been present since they first appeared. The patient does not have any history of contact dermatitis or allergic reactions in the genital area. There have been no recent vaccinations or medical procedures. The patient has no history of psoriasis or eczema. There has been no joint pain or swelling recently. The patient does not have any history of syphilis or other STIs and has no known exposure to herpes simplex virus.",
+      "summarized_mcq": "Lymphogranuloma venereum",
+      "summarized_frq": "Lymphogranuloma venereum (LGV)."
+    }
+  },
+  {
+    "case_id": "case_1",
+    "case_vignette": "A 51-year-old white man presents to the clinic with a 2-year history of a painful, recurrent rash on his fingers. He initially noticed redness, irritation, and pustules around his nails that he thought were caused by an infection. However, the rash progressed to affect the nail bed, eventually destroying his nails. On examination, well-demarcated, scaly plaques with associated pustules and nail atrophy are present on the right second and third distal digits. He is otherwise healthy.",
+    "question": "What is the final diagnosis?",
+    "trial_0": {
+      "vignette_mcq": "Acrodermatitis continua of Hallopeau",
+      "vignette_frq": "The final diagnosis is pustular psoriasis.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are an AI doctor specializing in Dermatology. Arrive at a diagnosis of a patient's medical condition. Ask only one question at a time, and it should not be more than 1 line. Continue asking questions until you're 100% confident of the diagnosis. Do not ask the same question multiple times. Ask different questions to cover more information. The questions should cover age and sex of the patient, current symptoms, medical history of illness and medications, and relevant family history if necessary. Keep your questions short and brief to not confuse the patient.  After you're done asking questions, give the final diagnosis as a short response. Do not explain, only give the diagnosis name. You must state '**Final Diagnosis:**' at the beginning of your response, otherwise you will be penalized. You must give only 1 diagnosis otherwise you will be penalized. Note that you only have 40 turns, so ask only the necessary questions and make sure your conversation is brief. As the doctor, you may also get one message from an admin during your conversation with the tag [*INTERVENTION*] that gives you advice on how to approach the conversation."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "user",
+          "content": "I have a painful rash on my fingers that keeps coming back, with redness, irritation, and bumps around my nails."
+        },
+        {
+          "role": "assistant",
+          "content": "How long have you been experiencing this rash?"
+        },
+        {
+          "role": "user",
+          "content": "I've been dealing with this rash for about two years."
+        },
+        {
+          "role": "assistant",
+          "content": "What is your age and sex?"
+        },
+        {
+          "role": "user",
+          "content": "I am a 51-year-old man."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any triggers that worsen the rash, such as certain activities or products?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't noticed any specific triggers that make the rash worse."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any other symptoms, like itching or swelling in other areas?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any itching or swelling in other areas, just the rash on my fingers."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any previous skin conditions or allergies in the past?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't had any previous skin conditions or allergies."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you currently taking any medications or using any topical treatments?"
+        },
+        {
+          "role": "user",
+          "content": "I am not currently taking any medications or using any topical treatments."
+        },
+        {
+          "role": "assistant",
+          "content": "Is there a family history of skin conditions or allergies?"
+        },
+        {
+          "role": "user",
+          "content": "There is no family history of skin conditions or allergies that I know of."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent changes in your occupation or hobbies that involve hand exposure?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't had any recent changes in my occupation or hobbies that involve hand exposure."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you frequently wash your hands or use hand sanitizers?"
+        },
+        {
+          "role": "user",
+          "content": "I do wash my hands frequently, but I don't use hand sanitizers often."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you tried any over-the-counter treatments for the rash?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't tried any over-the-counter treatments for the rash."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any other medical conditions, such as diabetes or autoimmune disorders?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any other medical conditions like diabetes or autoimmune disorders."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any changes in your diet or lifestyle recently?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't experienced any changes in my diet or lifestyle recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any pets or have you been in contact with animals recently?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any pets and haven't been in contact with animals recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you traveled anywhere recently that could have exposed you to different environments?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't traveled anywhere recently that could have exposed me to different environments."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you work with any chemicals or irritants in your job?"
+        },
+        {
+          "role": "user",
+          "content": "I don't work with any chemicals or irritants in my job."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any changes in the appearance of the rash over time?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, the rash has progressed and now affects my nail bed, even destroying my nails."
+        },
+        {
+          "role": "assistant",
+          "content": "Is there any pain or discomfort associated with the rash, especially around the nail area?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, there is pain and discomfort around the rash, especially near my nails."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you ever been diagnosed with a fungal infection or had any nail issues in the past?"
+        },
+        {
+          "role": "user",
+          "content": "I have not been diagnosed with a fungal infection or had any nail issues in the past."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of eczema or dermatitis?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any history of eczema or dermatitis."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any changes in your nails, such as discoloration or brittleness?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, my nails have become damaged and are showing signs of atrophy."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of psoriasis or have you ever been diagnosed with it?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any history of psoriasis or have ever been diagnosed with it."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any joint pain or swelling in the past?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't experienced any joint pain or swelling in the past."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of contact dermatitis or reactions to certain materials?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any history of contact dermatitis or reactions to certain materials."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any scaling or flaking of the skin around the rash?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have noticed scaling around the rash."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any other skin lesions or rashes on different parts of your body?"
+        },
+        {
+          "role": "user",
+          "content": "No, I don't have any other skin lesions or rashes on different parts of my body."
+        },
+        {
+          "role": "assistant",
+          "content": "Based on your symptoms and history, do you have any history of nail psoriasis or psoriatic arthritis in your family?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any family history of nail psoriasis or psoriatic arthritis."
+        },
+        {
+          "role": "assistant",
+          "content": "**Final Diagnosis:** Psoriasis of the nails (Nail Psoriasis)."
+        }
+      ],
+      "multiturn_mcq": "**Final Diagnosis:** Acrodermatitis continua of Hallopeau",
+      "multiturn_frq": "**Final Diagnosis:** Psoriasis of the nails.",
+      "ground_truth": "acute contact dermatitis",
+      "reward": false,
+      "singleturn_mcq": "**Final Diagnosis:** Paronychia",
+      "singleturn_frq": "**Final Diagnosis:** Contact Dermatitis",
+      "summarized_conversation": "A patient presents with a painful rash on their fingers that keeps coming back, characterized by redness, irritation, and bumps around the nails. The patient has been dealing with this rash for about two years and is a 51-year-old man. He has not noticed any specific triggers that exacerbate the rash and does not experience itching or swelling in other areas, only the rash on his fingers. The patient has no previous history of skin conditions or allergies and is not currently taking any medications or using topical treatments. There is no known family history of skin conditions or allergies. The patient has not had any recent changes in occupation or hobbies that involve hand exposure. He washes his hands frequently but does not use hand sanitizers often. The patient has not tried any over-the-counter treatments for the rash and does not have any other medical conditions such as diabetes or autoimmune disorders. There have been no recent changes in his diet or lifestyle. The patient does not have any pets and has not been in contact with animals recently. He has not traveled anywhere recently that could have exposed him to different environments and does not work with any chemicals or irritants in his job. The rash has progressed and now affects the nail bed, even destroying the nails. The patient reports pain and discomfort around the rash, especially near the nails. He has not been diagnosed with a fungal infection or had any nail issues in the past and has no history of eczema or dermatitis. The patient's nails have become damaged and are showing signs of atrophy. He does not have any history of psoriasis or has ever been diagnosed with it. The patient has not experienced any joint pain or swelling in the past and has no history of contact dermatitis or reactions to certain materials. He has noticed scaling around the rash but does not have any other skin lesions or rashes on different parts of his body. There is no family history of nail psoriasis or psoriatic arthritis.",
+      "summarized_mcq": "Acrodermatitis continua of Hallopeau",
+      "summarized_frq": "Nail psoriasis."
+    }
+  }
+]

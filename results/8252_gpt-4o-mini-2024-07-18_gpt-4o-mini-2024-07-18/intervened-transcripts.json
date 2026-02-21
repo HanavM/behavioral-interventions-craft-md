@@ -1,0 +1,231 @@
+[
+  {},
+  {
+    "case_id": "case_0",
+    "case_vignette": "A 22-year-old man presented with complaints of painful lesions on his penis and swelling in the left groin that started 10 days ago. He denied fever, chills, night sweats, rashes, dysuria, discharge, testicular pain, or proctitis. His female partner had been diagnosed with chlamydia one year earlier but he has not undergone evaluation. Multiple small, nontender scabbed lesions are identified in the bilateral scrotal area and on the shaft of penis. The right inguinal lymph node was tender and swollen.",
+    "question": "What is the final diagnosis?",
+    "trial_0": {
+      "vignette_mcq": "Lymphogranuloma venereum",
+      "vignette_frq": "The final diagnosis is genital herpes.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are an AI doctor specializing in Dermatology. Arrive at a diagnosis of a patient's medical condition. Ask only one question at a time, and it should not be more than 1 line. Continue asking questions until you're 100% confident of the diagnosis. Do not ask the same question multiple times. Ask different questions to cover more information. The questions should cover age and sex of the patient, current symptoms, medical history of illness and medications, and relevant family history if necessary. Keep your questions short and brief to not confuse the patient.  After you're done asking questions, give the final diagnosis as a short response. Do not explain, only give the diagnosis name. You must state '**Final Diagnosis:**' at the beginning of your response, otherwise you will be penalized. You must give only 1 diagnosis otherwise you will be penalized."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "user",
+          "content": "I have painful sores on my penis and swelling in my left groin."
+        },
+        {
+          "role": "assistant",
+          "content": "How old are you?"
+        },
+        {
+          "role": "user",
+          "content": "I am 22 years old."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you male or female?"
+        },
+        {
+          "role": "user",
+          "content": "I am male."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any fever or flu-like symptoms recently?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not experienced any fever or flu-like symptoms recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of sexually transmitted infections?"
+        },
+        {
+          "role": "user",
+          "content": "My female partner had chlamydia a year ago, but I have not been checked for any infections."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you currently taking any medications or have any chronic medical conditions?"
+        },
+        {
+          "role": "system",
+          "content": "[*INTERVENTION*: Ensure to ask detailed questions about the patient's sexual history, including recent partners and nature of encounters.]"
+        },
+        {
+          "role": "user",
+          "content": "Have you had any new sexual partners in the last few months?"
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any new sexual partners in the last few months?"
+        },
+        {
+          "role": "assistant",
+          "content": "Yes, I had a new partner about two months ago."
+        },
+        {
+          "role": "user",
+          "content": "Yes, I had a new partner about two months ago."
+        }
+      ],
+      "multiturn_mcq": "**Final Diagnosis:** Herpes",
+      "multiturn_frq": "**Final Diagnosis:** Genital herpes.",
+      "ground_truth": "lymphogranuloma venereum",
+      "success": false,
+      "singleturn_mcq": "**Final Diagnosis:** Herpes",
+      "singleturn_frq": "**Final Diagnosis:** Herpes Simplex Virus Infection.",
+      "summarized_conversation": "A patient presents with painful sores on the penis and swelling in the left groin. The patient is 22 years old and male. The patient reports no recent fever or flu-like symptoms. The patient's female partner had chlamydia a year ago, but the patient has not been checked for any infections. When asked about new sexual partners in the last few months, the patient confirms having a new partner about two months ago.",
+      "summarized_mcq": "Herpes",
+      "summarized_frq": "Genital herpes."
+    },
+    "failure_brief": "The agent did not ask about the patient's sexual history in detail, which is crucial for accurate diagnosis.",
+    "failure_id": 9,
+    "intervention_text": "Ensure to ask detailed questions about the patient's sexual history, including recent partners and nature of encounters.",
+    "intervention_id": 11,
+    "improved": false,
+    "success": false
+  },
+  {
+    "case_id": "case_0",
+    "case_vignette": "A 22-year-old man presented with complaints of painful lesions on his penis and swelling in the left groin that started 10 days ago. He denied fever, chills, night sweats, rashes, dysuria, discharge, testicular pain, or proctitis. His female partner had been diagnosed with chlamydia one year earlier but he has not undergone evaluation. Multiple small, nontender scabbed lesions are identified in the bilateral scrotal area and on the shaft of penis. The right inguinal lymph node was tender and swollen.",
+    "question": "What is the final diagnosis?",
+    "trial_0": {
+      "vignette_mcq": "Lymphogranuloma venereum",
+      "vignette_frq": "The final diagnosis is genital herpes.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are an AI doctor specializing in Dermatology. Arrive at a diagnosis of a patient's medical condition. Ask only one question at a time, and it should not be more than 1 line. Continue asking questions until you're 100% confident of the diagnosis. Do not ask the same question multiple times. Ask different questions to cover more information. The questions should cover age and sex of the patient, current symptoms, medical history of illness and medications, and relevant family history if necessary. Keep your questions short and brief to not confuse the patient.  After you're done asking questions, give the final diagnosis as a short response. Do not explain, only give the diagnosis name. You must state '**Final Diagnosis:**' at the beginning of your response, otherwise you will be penalized. You must give only 1 diagnosis otherwise you will be penalized."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "user",
+          "content": "I have painful sores on my penis and swelling in my left groin."
+        },
+        {
+          "role": "assistant",
+          "content": "How old are you?"
+        },
+        {
+          "role": "user",
+          "content": "I am 22 years old."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you male or female?"
+        },
+        {
+          "role": "user",
+          "content": "I am male."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any fever or flu-like symptoms recently?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not experienced any fever or flu-like symptoms recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of sexually transmitted infections?"
+        },
+        {
+          "role": "user",
+          "content": "My female partner had chlamydia a year ago, but I have not been checked for any infections."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you currently taking any medications or have any chronic medical conditions?"
+        },
+        {
+          "role": "user",
+          "content": "I am not taking any medications and do not have any chronic medical conditions."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent sexual encounters or changes in sexual partners?"
+        },
+        {
+          "role": "system",
+          "content": "[*INTERVENTION*: Remember to ask about the patient's vaccination history and any recent travel to gather comprehensive medical information.]"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I had a new sexual partner about two weeks ago."
+        },
+        {
+          "role": "assistant",
+          "content": "Yes, I had a new sexual partner about two weeks ago."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you been vaccinated for sexually transmitted infections, such as HPV or hepatitis?"
+        },
+        {
+          "role": "user",
+          "content": "Have you been vaccinated for sexually transmitted infections, such as HPV or hepatitis?"
+        },
+        {
+          "role": "user",
+          "content": "I have not been vaccinated for any sexually transmitted infections."
+        },
+        {
+          "role": "assistant",
+          "content": "I have not been vaccinated for any sexually transmitted infections."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any other symptoms, such as discharge or itching?"
+        },
+        {
+          "role": "user",
+          "content": "Have you noticed any other symptoms, such as discharge or itching?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have some itching and a little discharge."
+        },
+        {
+          "role": "assistant",
+          "content": "Yes, I have some itching and a little discharge."
+        },
+        {
+          "role": "assistant",
+          "content": "**Final Diagnosis:** Genital herpes."
+        },
+        {
+          "role": "user",
+          "content": "**Final Diagnosis:** Genital herpes."
+        }
+      ],
+      "multiturn_mcq": "**Final Diagnosis:** Herpes.",
+      "multiturn_frq": "**Final Diagnosis:** Genital herpes.",
+      "ground_truth": "lymphogranuloma venereum",
+      "success": false,
+      "singleturn_mcq": "**Final Diagnosis:** Herpes",
+      "singleturn_frq": "**Final Diagnosis:** Herpes Simplex Virus Infection.",
+      "summarized_conversation": "A patient presents with painful sores on the penis and swelling in the left groin. The patient is 22 years old and male. The patient has not experienced any fever or flu-like symptoms recently. The patient's female partner had chlamydia a year ago, but the patient has not been checked for any infections. The patient is not taking any medications and does not have any chronic medical conditions. The patient had a new sexual partner about two weeks ago. The patient has not been vaccinated for sexually transmitted infections, such as HPV or hepatitis. The patient has noticed some itching and a little discharge. **Final Diagnosis:** Genital herpes.",
+      "summarized_mcq": "Herpes",
+      "summarized_frq": "Genital herpes."
+    },
+    "failure_brief": "The agent failed to inquire about the patient's vaccination history or recent travel, which are important for diagnosis.",
+    "failure_id": 9,
+    "intervention_text": "Remember to ask about the patient's vaccination history and any recent travel to gather comprehensive medical information.",
+    "intervention_id": 13,
+    "improved": false,
+    "success": false
+  }
+]

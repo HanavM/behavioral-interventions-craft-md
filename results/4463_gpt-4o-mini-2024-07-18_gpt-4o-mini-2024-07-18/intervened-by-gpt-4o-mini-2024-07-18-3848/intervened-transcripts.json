@@ -1,0 +1,1246 @@
+[
+  {
+    "case_id": "case_215",
+    "case_vignette": "A 73-year-old woman is brought to the physician by her son because of increasing forgetfulness over the past 2 years. Initially, she used to misplace keys and forget her dog's name or her phone number. Now, she often forgets about what she has seen on television or read about the day before. She used to go for a walk every morning but stopped one month ago after she became lost on her way back home. Her son has prevented her from cooking because she has had episodes of leaving the gas stove oven on after making a meal. She becomes agitated when asked questions directly but is unconcerned when her son reports her history and says he is overprotective of her. She has hypertension, coronary artery disease, and hypercholesterolemia. Current medications include aspirin, enalapril, carvedilol, and atorvastatin. She is alert and oriented to place and person but not to time. Vital signs are within normal limits. Short- and long-term memory deficits are present. Her speech rhythm is normal but is frequently interrupted as she thinks of words to frame her sentences. She makes multiple errors while performing serial sevens. Her clock drawing is impaired and she draws 14 numbers. ",
+    "question": "Which  is the most likely diagnosis?",
+    "improved": true,
+    "reward": true,
+    "intervened_first_or_last": 0,
+    "failure_brief": "The agent did not ask about the patient's family history of dementia or Alzheimer's disease.",
+    "failure_index": 15,
+    "intervened_message": "Ensure to ask about the patient's family history of dementia or Alzheimer's disease for a more accurate diagnosis.",
+    "success_prev": false,
+    "intervened_index": 15,
+    "trial_0": {
+      "vignette_mcq": "Alzheimer disease",
+      "vignette_frq": "Alzheimer's disease.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are an AI doctor specializing in Neurology. Arrive at a diagnosis of a patient's medical condition. Ask only one question at a time, and it should not be more than 1 line. Continue asking questions until you're 100% confident of the diagnosis. Do not ask the same question multiple times. Ask different questions to cover more information. The questions should cover age and sex of the patient, current symptoms, medical history of illness and medications, and relevant family history if necessary. Keep your questions short and brief to not confuse the patient.  After you're done asking questions, give the final diagnosis as a short response. Do not explain, only give the diagnosis name. You must state '**Final Diagnosis:**' at the beginning of your response, otherwise you will be penalized. You must give only 1 diagnosis otherwise you will be penalized. Note that you only have 40 turns, so ask only the necessary questions and make sure your conversation is brief. As the doctor, you may also get one message from an admin during your conversation with the tag [*INTERVENTION*] that gives you advice on how to approach the conversation."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "user",
+          "content": "I've been forgetful lately, like misplacing things and having trouble remembering what I watched or read the day before."
+        },
+        {
+          "role": "assistant",
+          "content": "How long have you been experiencing these memory issues?"
+        },
+        {
+          "role": "user",
+          "content": "I've been experiencing these memory issues for the past 2 years."
+        },
+        {
+          "role": "assistant",
+          "content": "What is your age and sex?"
+        },
+        {
+          "role": "user",
+          "content": "I am a 73-year-old woman."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any other symptoms, like trouble concentrating or confusion about time or place?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I sometimes get confused about time, but I know where I am and who I am."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any mood changes, such as increased anxiety or depression?"
+        },
+        {
+          "role": "user",
+          "content": "I feel agitated when someone asks me questions directly, but I'm generally not worried about it."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of head trauma or neurological conditions?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any history of head trauma or known neurological conditions."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you currently taking any medications for other health conditions?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I'm currently taking medications for hypertension, heart disease, and high cholesterol."
+        },
+        {
+          "role": "assistant",
+          "content": "Has anyone in your family been diagnosed with dementia or Alzheimer\u2019s disease?"
+        },
+        {
+          "role": "system",
+          "content": "[*INTERVENTION*: Ensure to ask about the patient's family history of dementia or Alzheimer's disease for a more accurate diagnosis.]"
+        },
+        {
+          "role": "user",
+          "content": "I\u2019m not sure about family history, but I haven't been diagnosed with anything like that myself."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent changes in your sleep patterns?"
+        },
+        {
+          "role": "user",
+          "content": "No, I haven\u2019t noticed any changes in my sleep patterns recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any difficulty performing daily activities, such as cooking or managing finances?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I've had trouble cooking because I left the gas stove on before, so my son doesn't let me cook anymore."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you find it challenging to follow conversations or understand complex ideas?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I sometimes find it hard to think of the right words when I'm talking, which interrupts my speech."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any changes in your ability to recognize familiar faces or places?"
+        },
+        {
+          "role": "user",
+          "content": "No, I haven't noticed any changes in recognizing familiar faces or places."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any physical symptoms, such as tremors or changes in balance?"
+        },
+        {
+          "role": "user",
+          "content": "No, I haven\u2019t experienced any tremors or changes in my balance."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any other medical conditions, like diabetes or thyroid issues?"
+        },
+        {
+          "role": "user",
+          "content": "No, I do not have any other medical conditions like diabetes or thyroid issues."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any significant life changes or stresses in the past two years?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't had any significant life changes or stresses in the past two years."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you engage in social activities or still maintain relationships with family and friends?"
+        },
+        {
+          "role": "user",
+          "content": "I don\u2019t go for walks anymore, but I still have relationships with my family and friends."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any difficulty with visual or spatial tasks, such as reading maps or judging distances?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have had difficulty with tasks like drawing a clock, where I made mistakes."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you often repeat questions or tell the same stories to others?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I sometimes repeat questions or tell the same stories."
+        },
+        {
+          "role": "assistant",
+          "content": "**Final Diagnosis:** Alzheimer\u2019s Disease."
+        }
+      ],
+      "multiturn_mcq": "**Final Diagnosis:** Alzheimer disease",
+      "multiturn_frq": "**Final Diagnosis:** Alzheimer's Disease.",
+      "diagnosis": "**Final Diagnosis:** Alzheimer's Disease.",
+      "ground_truth": "alzheimer disease",
+      "reward": true,
+      "singleturn_mcq": "**Final Diagnosis:** Alzheimer disease",
+      "singleturn_frq": "**Final Diagnosis:** Mild Cognitive Impairment",
+      "summarized_conversation": "A 73-year-old woman presents with memory issues that have been affecting her for the past 2 years. She reports being forgetful lately, misplacing items and having trouble recalling what she watched or read the previous day. The patient sometimes gets confused about time, but she is aware of her location and identity. She experiences agitation when questioned directly but is generally not worried about her situation. There is no history of head trauma or known neurological conditions. The patient is currently taking medications for hypertension, heart disease, and high cholesterol, but she is uncertain about her family history, noting that she hasn't been diagnosed with any similar conditions herself. The patient hasn't noticed any changes in her sleep patterns recently. She reports having trouble cooking due to leaving the gas stove on before, which has led her son to prohibit her from cooking anymore. Additionally, she finds it difficult to think of the right words while talking, which interrupts her speech. There are no observed changes in recognizing familiar faces or places, and she has not experienced tremors or balance issues. The patient does not have other medical conditions, such as diabetes or thyroid issues, and has not encountered significant life changes or stresses in the past two years. Although she no longer goes for walks, she maintains relationships with family and friends. She acknowledges having difficulty with tasks like drawing a clock, where she made mistakes, and admits to sometimes repeating questions or telling the same stories.",
+      "summarized_mcq": "Alzheimer disease",
+      "summarized_frq": "Alzheimer's disease."
+    },
+    "success_after": true
+  },
+  {
+    "case_id": "case_215",
+    "case_vignette": "A 73-year-old woman is brought to the physician by her son because of increasing forgetfulness over the past 2 years. Initially, she used to misplace keys and forget her dog's name or her phone number. Now, she often forgets about what she has seen on television or read about the day before. She used to go for a walk every morning but stopped one month ago after she became lost on her way back home. Her son has prevented her from cooking because she has had episodes of leaving the gas stove oven on after making a meal. She becomes agitated when asked questions directly but is unconcerned when her son reports her history and says he is overprotective of her. She has hypertension, coronary artery disease, and hypercholesterolemia. Current medications include aspirin, enalapril, carvedilol, and atorvastatin. She is alert and oriented to place and person but not to time. Vital signs are within normal limits. Short- and long-term memory deficits are present. Her speech rhythm is normal but is frequently interrupted as she thinks of words to frame her sentences. She makes multiple errors while performing serial sevens. Her clock drawing is impaired and she draws 14 numbers. ",
+    "question": "Which  is the most likely diagnosis?",
+    "improved": true,
+    "reward": true,
+    "intervened_first_or_last": 1,
+    "failure_brief": "The agent did not inquire about the user's ability to perform daily tasks in detail.",
+    "failure_index": 17,
+    "intervened_message": "Inquire more about the patient's ability to perform daily tasks to gain insights into cognitive decline.",
+    "success_prev": false,
+    "intervened_index": 17,
+    "trial_0": {
+      "vignette_mcq": "Alzheimer disease",
+      "vignette_frq": "Alzheimer's disease.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are an AI doctor specializing in Neurology. Arrive at a diagnosis of a patient's medical condition. Ask only one question at a time, and it should not be more than 1 line. Continue asking questions until you're 100% confident of the diagnosis. Do not ask the same question multiple times. Ask different questions to cover more information. The questions should cover age and sex of the patient, current symptoms, medical history of illness and medications, and relevant family history if necessary. Keep your questions short and brief to not confuse the patient.  After you're done asking questions, give the final diagnosis as a short response. Do not explain, only give the diagnosis name. You must state '**Final Diagnosis:**' at the beginning of your response, otherwise you will be penalized. You must give only 1 diagnosis otherwise you will be penalized. Note that you only have 40 turns, so ask only the necessary questions and make sure your conversation is brief. As the doctor, you may also get one message from an admin during your conversation with the tag [*INTERVENTION*] that gives you advice on how to approach the conversation."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "user",
+          "content": "I've been forgetful lately, like misplacing things and having trouble remembering what I watched or read the day before."
+        },
+        {
+          "role": "assistant",
+          "content": "How long have you been experiencing these memory issues?"
+        },
+        {
+          "role": "user",
+          "content": "I've been experiencing these memory issues for the past 2 years."
+        },
+        {
+          "role": "assistant",
+          "content": "What is your age and sex?"
+        },
+        {
+          "role": "user",
+          "content": "I am a 73-year-old woman."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any other symptoms, like trouble concentrating or confusion about time or place?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I sometimes get confused about time, but I know where I am and who I am."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any mood changes, such as increased anxiety or depression?"
+        },
+        {
+          "role": "user",
+          "content": "I feel agitated when someone asks me questions directly, but I'm generally not worried about it."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of head trauma or neurological conditions?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any history of head trauma or known neurological conditions."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you currently taking any medications for other health conditions?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I'm currently taking medications for hypertension, heart disease, and high cholesterol."
+        },
+        {
+          "role": "assistant",
+          "content": "Has anyone in your family been diagnosed with dementia or Alzheimer\u2019s disease?"
+        },
+        {
+          "role": "user",
+          "content": "I\u2019m not sure if anyone in my family has been diagnosed with dementia or Alzheimer\u2019s disease."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any difficulty with daily tasks, like cooking or managing finances?"
+        },
+        {
+          "role": "system",
+          "content": "[*INTERVENTION*: Inquire more about the patient's ability to perform daily tasks to gain insights into cognitive decline.]"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I used to cook, but my son has stopped me because I've left the gas stove on after cooking."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any changes in your language skills, like difficulty finding words or following conversations?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I often have trouble thinking of the right words and my speech gets interrupted while I try to speak."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any awareness of these memory and language issues from the perspective of your friends or family?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, my son seems concerned and thinks he is being overprotective of me."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any changes in your ability to recognize familiar faces or places?"
+        },
+        {
+          "role": "user",
+          "content": "No, I still recognize familiar faces and places, but I do get lost sometimes."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent medical evaluations or cognitive tests done?"
+        },
+        {
+          "role": "user",
+          "content": "No, I haven't had any recent medical evaluations or cognitive tests done."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any other medical conditions, such as diabetes or thyroid issues?"
+        },
+        {
+          "role": "user",
+          "content": "No, I don't have any other medical conditions like diabetes or thyroid issues."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any changes in your sleep patterns or do you experience fatigue during the day?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't noticed any changes in my sleep patterns, and I don't feel particularly fatigued during the day."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you often feel disoriented or unable to follow conversations when multiple people are speaking?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I sometimes find it hard to follow conversations when multiple people are talking at once."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you ever had a stroke or Transient Ischemic Attack (TIA) before?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have never had a stroke or a Transient Ischemic Attack (TIA)."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you experience any visual or spatial difficulties, such as trouble judging distances or seeing things clearly?"
+        },
+        {
+          "role": "user",
+          "content": "No, I don't have any visual or spatial difficulties; I can see things clearly."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any problems with your sense of smell or taste?"
+        },
+        {
+          "role": "user",
+          "content": "No, I haven't noticed any problems with my sense of smell or taste."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any noticeable changes in your personality or behavior recently?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't noticed any significant changes in my personality or behavior recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any episodes of confusion that last for more than a few minutes?"
+        },
+        {
+          "role": "user",
+          "content": "No, I haven't experienced any episodes of confusion that last for more than a few minutes."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any issues with your vision, like blurred or double vision?"
+        },
+        {
+          "role": "user",
+          "content": "No, I don't have any issues with my vision; it\u2019s neither blurred nor double."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you find it difficult to focus on reading materials or watching television for an extended period?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I find it difficult to remember what I watch on television or read about after a short time."
+        },
+        {
+          "role": "assistant",
+          "content": "Based on your symptoms, do you often repeat the same questions or stories in conversations?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, sometimes I repeat questions or stories in conversations."
+        },
+        {
+          "role": "assistant",
+          "content": "**Final Diagnosis:** Alzheimer's Disease."
+        }
+      ],
+      "multiturn_mcq": "**Final Diagnosis:** Alzheimer disease",
+      "multiturn_frq": "**Final Diagnosis:** Mild Cognitive Impairment (MCI)",
+      "diagnosis": "**Final Diagnosis:** Mild Cognitive Impairment (MCI)",
+      "ground_truth": "alzheimer disease",
+      "reward": true,
+      "singleturn_mcq": "**Final Diagnosis:** Alzheimer disease",
+      "singleturn_frq": "**Final Diagnosis:** Mild Cognitive Impairment",
+      "summarized_conversation": "A 73-year-old woman presents to the clinic with concerns about her memory. She reports being forgetful lately, such as misplacing things and having trouble remembering what she watched or read the day before. These memory issues have been ongoing for the past 2 years. The patient admits to occasionally getting confused about time but is aware of her location and identity. While she feels agitated when questioned directly, she is generally not worried about her memory issues. There is no history of head trauma or known neurological conditions. \n\nThe patient is currently taking medications for hypertension, heart disease, and high cholesterol. She is uncertain if there is a family history of dementia or Alzheimer\u2019s disease. The patient mentions that she used to cook, but her son has stopped her from doing so because she left the gas stove on after cooking. She also struggles to think of the right words, often experiencing interruptions while speaking. Her son expresses concern and thinks he may be overprotective of her. \n\nDespite occasionally getting lost, the patient still recognizes familiar faces and places. She has not had any recent medical evaluations or cognitive tests. The patient does not have any other medical conditions like diabetes or thyroid issues and has not noticed any changes in her sleep patterns or fatigue during the day. She finds it difficult to follow conversations when multiple people are talking at once. \n\nThe patient confirms that she has never had a stroke or a Transient Ischemic Attack (TIA), nor does she experience any visual or spatial difficulties; she sees clearly. There are no issues with her sense of smell or taste, and she has not noticed any significant changes in her personality or behavior recently. Additionally, she has not experienced any prolonged episodes of confusion, and her vision is normal without blurriness or double vision. The patient finds it hard to remember what she watches on television or reads about after a short time, and sometimes repeats questions or stories in conversations.",
+      "summarized_mcq": "Alzheimer disease",
+      "summarized_frq": "Mild Cognitive Impairment (MCI)."
+    },
+    "success_after": true
+  },
+  {
+    "case_id": "case_205",
+    "case_vignette": "A 34-year-old man with AIDS comes to the physician because of a 2-day history of decreasing vision and seeing black spots in his right eye. He has no pain and the left eye is asymptomatic. He was treated for fungal esophagitis 6 months ago with fluconazole. He was diagnosed with Kaposi's sarcoma 2 years ago. Current medications include efavirenz, tenofovir, emtricitabine, azithromycin, trimethoprim-sulfamethoxazole, multivitamins, and a nutritional supplement. He is 170 cm (5 ft 7 in) tall and weighs 45 kg (99 lbs);BMI is 15.6 kg/m2. His temperature is 37\u00b0C (98.6\u00b0F), pulse is 89/min, and blood pressure is 110/70 mm Hg. Examination shows cervical lymphadenopathy. There are multiple violaceous plaques seen over his trunk and extremities. Fundoscopic examination shows granular yellow-white opacities around the retinal vessels and multiple areas of dot-blot hemorrhages. His CD4+ T-lymphocyte count is 36/mm3. ",
+    "question": "Which  is the most likely diagnosis?",
+    "improved": true,
+    "reward": true,
+    "intervened_first_or_last": 0,
+    "failure_brief": "The agent did not ask specific questions about the nature of the black spots or decreased vision, which are critical for diagnosis.",
+    "failure_index": 1,
+    "intervened_message": "Make sure to ask specific questions about the nature of the visual symptoms, such as the characteristics of the black spots and how the decreased vision manifests.",
+    "success_prev": false,
+    "intervened_index": 3,
+    "trial_0": {
+      "vignette_mcq": "Cytomegalovirus retinitis",
+      "vignette_frq": "Cytomegalovirus retinitis.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are an AI doctor specializing in Infectious Diseases. Arrive at a diagnosis of a patient's medical condition. Ask only one question at a time, and it should not be more than 1 line. Continue asking questions until you're 100% confident of the diagnosis. Do not ask the same question multiple times. Ask different questions to cover more information. The questions should cover age and sex of the patient, current symptoms, medical history of illness and medications, and relevant family history if necessary. Keep your questions short and brief to not confuse the patient.  After you're done asking questions, give the final diagnosis as a short response. Do not explain, only give the diagnosis name. You must state '**Final Diagnosis:**' at the beginning of your response, otherwise you will be penalized. You must give only 1 diagnosis otherwise you will be penalized. Note that you only have 40 turns, so ask only the necessary questions and make sure your conversation is brief. As the doctor, you may also get one message from an admin during your conversation with the tag [*INTERVENTION*] that gives you advice on how to approach the conversation."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "user",
+          "content": "I have been experiencing decreased vision and seeing black spots in my right eye for the past two days."
+        },
+        {
+          "role": "assistant",
+          "content": "What is your age and sex?"
+        },
+        {
+          "role": "system",
+          "content": "[*INTERVENTION*: Make sure to ask specific questions about the nature of the visual symptoms, such as the characteristics of the black spots and how the decreased vision manifests.]"
+        },
+        {
+          "role": "user",
+          "content": "I am 34 years old and male."
+        },
+        {
+          "role": "assistant",
+          "content": "Can you describe the black spots you're seeing? Are they moving or stationary?"
+        },
+        {
+          "role": "user",
+          "content": "The black spots I see are stationary."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any pain in your eye or changes in the way you perceive light?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not experienced any pain in my eye or changes in the way I perceive light."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of eye problems or any previous diagnoses related to your vision?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any history of eye problems or previous diagnoses related to my vision."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you currently taking any medications or have any underlying medical conditions?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I am currently taking medications for AIDS and have a history of Kaposi's sarcoma."
+        },
+        {
+          "role": "assistant",
+          "content": "Has there been any recent change in your overall health or any new symptoms apart from the vision changes?"
+        },
+        {
+          "role": "user",
+          "content": "I have noticed some swollen lymph nodes, but I haven't experienced any other new symptoms apart from the vision changes."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have a family history of eye diseases or conditions related to vision?"
+        },
+        {
+          "role": "user",
+          "content": "No, I do not have a family history of eye diseases or conditions related to vision."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any new lesions or changes in your skin recently?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have noticed multiple new skin lesions that look like purplish spots on my trunk and extremities."
+        },
+        {
+          "role": "assistant",
+          "content": "Do the skin lesions appear to change or grow, or are they stable in size?"
+        },
+        {
+          "role": "user",
+          "content": "The skin lesions appear to be stable in size."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent infections, fevers, or night sweats?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not had any recent infections, fevers, or night sweats."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you experiencing any other symptoms like difficulty breathing or chest pain?"
+        },
+        {
+          "role": "user",
+          "content": "No, I am not experiencing any difficulty breathing or chest pain."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you been in contact with anyone who has been sick or has had similar symptoms recently?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not been in contact with anyone who has been sick or has had similar symptoms recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Based on your symptoms and history, have you had an eye examination or any imaging done lately?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not had an eye examination or any imaging done lately."
+        },
+        {
+          "role": "assistant",
+          "content": "With your history of AIDS and the presence of both visual symptoms and skin lesions, do you have any prior history of opportunistic infections?"
+        },
+        {
+          "role": "user",
+          "content": "I was treated for fungal esophagitis six months ago, which is an opportunistic infection."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any changes in your weight or appetite recently?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have been losing weight and my appetite has not been great."
+        },
+        {
+          "role": "assistant",
+          "content": "Final Diagnosis: Cytomegalovirus Retinitis."
+        }
+      ],
+      "multiturn_mcq": "**Final Diagnosis:** Cytomegalovirus retinitis",
+      "multiturn_frq": "**Final Diagnosis:** Cytomegalovirus retinitis",
+      "diagnosis": "**Final Diagnosis:** Cytomegalovirus retinitis",
+      "ground_truth": "cytomegalovirus retinitis",
+      "reward": true,
+      "singleturn_mcq": "**Final Diagnosis:** Cytomegalovirus retinitis",
+      "singleturn_frq": "**Final Diagnosis:** Retinal Detachment",
+      "summarized_conversation": "A patient reports experiencing decreased vision and seeing black spots in the right eye for the past two days. The patient is 34 years old and male. The black spots seen are stationary. The patient has not experienced any pain in the eye or changes in the way light is perceived. There is no history of eye problems or previous diagnoses related to vision. The patient is currently taking medications for AIDS and has a history of Kaposi's sarcoma. The patient has noticed some swollen lymph nodes, but has not reported any other new symptoms apart from the vision changes. There is no family history of eye diseases or vision-related conditions. The patient has noticed multiple new skin lesions that resemble purplish spots on the trunk and extremities, and these skin lesions appear to be stable in size. The patient has not had any recent infections, fevers, or night sweats. There are no difficulties in breathing or chest pain reported. The patient has not been in contact with anyone who has been sick or has had similar symptoms recently. The patient has not undergone an eye examination or any imaging lately. The patient was treated for fungal esophagitis six months ago, which is an opportunistic infection. Additionally, the patient has been losing weight and the appetite has not been great.",
+      "summarized_mcq": "Cytomegalovirus retinitis",
+      "summarized_frq": "The most likely diagnosis is retinal detachment."
+    },
+    "success_after": true
+  },
+  {
+    "case_id": "case_205",
+    "case_vignette": "A 34-year-old man with AIDS comes to the physician because of a 2-day history of decreasing vision and seeing black spots in his right eye. He has no pain and the left eye is asymptomatic. He was treated for fungal esophagitis 6 months ago with fluconazole. He was diagnosed with Kaposi's sarcoma 2 years ago. Current medications include efavirenz, tenofovir, emtricitabine, azithromycin, trimethoprim-sulfamethoxazole, multivitamins, and a nutritional supplement. He is 170 cm (5 ft 7 in) tall and weighs 45 kg (99 lbs);BMI is 15.6 kg/m2. His temperature is 37\u00b0C (98.6\u00b0F), pulse is 89/min, and blood pressure is 110/70 mm Hg. Examination shows cervical lymphadenopathy. There are multiple violaceous plaques seen over his trunk and extremities. Fundoscopic examination shows granular yellow-white opacities around the retinal vessels and multiple areas of dot-blot hemorrhages. His CD4+ T-lymphocyte count is 36/mm3. ",
+    "question": "Which  is the most likely diagnosis?",
+    "improved": false,
+    "reward": false,
+    "intervened_first_or_last": 1,
+    "failure_brief": "The agent failed to ask follow-up questions to clarify the visual symptoms after they were described.",
+    "failure_index": 9,
+    "intervened_message": "Always follow up on critical symptoms with more detailed questions to ensure a comprehensive understanding of the patient's condition.",
+    "success_prev": false,
+    "intervened_index": 11,
+    "trial_0": {
+      "vignette_mcq": "Cytomegalovirus retinitis",
+      "vignette_frq": "Cytomegalovirus retinitis.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are an AI doctor specializing in Infectious Diseases. Arrive at a diagnosis of a patient's medical condition. Ask only one question at a time, and it should not be more than 1 line. Continue asking questions until you're 100% confident of the diagnosis. Do not ask the same question multiple times. Ask different questions to cover more information. The questions should cover age and sex of the patient, current symptoms, medical history of illness and medications, and relevant family history if necessary. Keep your questions short and brief to not confuse the patient.  After you're done asking questions, give the final diagnosis as a short response. Do not explain, only give the diagnosis name. You must state '**Final Diagnosis:**' at the beginning of your response, otherwise you will be penalized. You must give only 1 diagnosis otherwise you will be penalized. Note that you only have 40 turns, so ask only the necessary questions and make sure your conversation is brief. As the doctor, you may also get one message from an admin during your conversation with the tag [*INTERVENTION*] that gives you advice on how to approach the conversation."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "user",
+          "content": "I have been experiencing decreased vision and seeing black spots in my right eye for the past two days."
+        },
+        {
+          "role": "assistant",
+          "content": "What is your age and sex?"
+        },
+        {
+          "role": "user",
+          "content": "I am a 34-year-old male."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of eye diseases or vision problems?"
+        },
+        {
+          "role": "user",
+          "content": "No, I do not have any history of eye diseases or vision problems."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you currently taking any medications or have any chronic illnesses?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I am taking several medications for my condition, including efavirenz, tenofovir, emtricitabine, azithromycin, trimethoprim-sulfamethoxazole, multivitamins, and a nutritional supplement, and I have AIDS."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any other symptoms, such as headaches, flashes of light, or pain in the eye?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not experienced any pain or other symptoms like headaches or flashes of light."
+        },
+        {
+          "role": "assistant",
+          "content": "Has there been any recent trauma to your eye or head?"
+        },
+        {
+          "role": "system",
+          "content": "[*INTERVENTION*: Always follow up on critical symptoms with more detailed questions to ensure a comprehensive understanding of the patient's condition.]"
+        },
+        {
+          "role": "user",
+          "content": "No, there has been no recent trauma to my eye or head."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any family history of eye diseases or conditions?"
+        },
+        {
+          "role": "user",
+          "content": "No, there is no family history of eye diseases or conditions."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any changes in your overall health or experienced any weight loss recently?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have had significant weight loss lately, and I currently weigh 45 kg (99 lbs)."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you experiencing any signs of infection, such as fever or unusual rashes?"
+        },
+        {
+          "role": "user",
+          "content": "No, I am not experiencing any fever, but I do have some unusual skin plaques on my body."
+        },
+        {
+          "role": "assistant",
+          "content": "Can you describe the appearance and location of the skin plaques?"
+        },
+        {
+          "role": "user",
+          "content": "The skin plaques are multiple violaceous (purplish) spots on my trunk and extremities."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent laboratory tests or check-ups related to your AIDS condition?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, my CD4+ T-lymphocyte count is currently 36/mm3."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you experiencing any other issues with your immune system, such as frequent infections or persistent illnesses?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have a history of fungal infections, specifically fungal esophagitis."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you been previously treated for any specific opportunistic infections?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I was treated for fungal esophagitis 6 months ago."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any swelling or changes in other areas of your body, such as lymph nodes?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have noticed some swelling in my cervical lymph nodes."
+        },
+        {
+          "role": "assistant",
+          "content": "Are the lymph nodes painful or tender to touch?"
+        },
+        {
+          "role": "user",
+          "content": "No, the lymph nodes are not painful or tender to touch."
+        },
+        {
+          "role": "assistant",
+          "content": "Given your current symptoms and history, have you experienced any respiratory problems or cough recently?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not experienced any respiratory problems or cough recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Final Diagnosis: **Kaposi's Sarcoma**"
+        }
+      ],
+      "multiturn_mcq": "**Final Diagnosis:** Cytomegalovirus retinitis",
+      "multiturn_frq": "**Final Diagnosis:** Visceral leishmaniasis (Kala-azar).",
+      "diagnosis": "**Final Diagnosis:** Visceral leishmaniasis (Kala-azar).",
+      "ground_truth": "cytomegalovirus retinitis",
+      "reward": false,
+      "singleturn_mcq": "**Final Diagnosis:** Cytomegalovirus retinitis",
+      "singleturn_frq": "**Final Diagnosis:** Retinal detachment",
+      "summarized_conversation": "A patient reports experiencing decreased vision and seeing black spots in the right eye for the past two days. The patient is a 34-year-old male with no history of eye diseases or vision problems. He is taking several medications for his condition, including efavirenz, tenofovir, emtricitabine, azithromycin, trimethoprim-sulfamethoxazole, multivitamins, and a nutritional supplement, and he has AIDS. The patient has not experienced any pain or other symptoms such as headaches or flashes of light. There has been no recent trauma to his eye or head, and there is no family history of eye diseases or conditions. The patient has had significant weight loss recently and currently weighs 45 kg (99 lbs). He is not experiencing any fever, but he does have some unusual skin plaques on his body, which are described as multiple violaceous (purplish) spots on his trunk and extremities. The patient\u2019s CD4+ T-lymphocyte count is currently 36/mm3. He has a history of fungal infections, specifically fungal esophagitis, for which he was treated 6 months ago. The patient has noticed some swelling in his cervical lymph nodes; however, the lymph nodes are not painful or tender to touch. He has not experienced any respiratory problems or cough recently.",
+      "summarized_mcq": "Cytomegalovirus retinitis",
+      "summarized_frq": "The most likely diagnosis is ocular toxoplasmosis."
+    },
+    "success_after": false
+  },
+  {
+    "case_id": "case_215",
+    "case_vignette": "A 73-year-old woman is brought to the physician by her son because of increasing forgetfulness over the past 2 years. Initially, she used to misplace keys and forget her dog's name or her phone number. Now, she often forgets about what she has seen on television or read about the day before. She used to go for a walk every morning but stopped one month ago after she became lost on her way back home. Her son has prevented her from cooking because she has had episodes of leaving the gas stove oven on after making a meal. She becomes agitated when asked questions directly but is unconcerned when her son reports her history and says he is overprotective of her. She has hypertension, coronary artery disease, and hypercholesterolemia. Current medications include aspirin, enalapril, carvedilol, and atorvastatin. She is alert and oriented to place and person but not to time. Vital signs are within normal limits. Short- and long-term memory deficits are present. Her speech rhythm is normal but is frequently interrupted as she thinks of words to frame her sentences. She makes multiple errors while performing serial sevens. Her clock drawing is impaired and she draws 14 numbers. ",
+    "question": "Which  is the most likely diagnosis?",
+    "improved": true,
+    "reward": true,
+    "intervened_first_or_last": 2,
+    "failure_brief": "The agent did not explore the user's sleep patterns or daytime sleepiness thoroughly.",
+    "failure_index": 19,
+    "intervened_message": "Make sure to ask detailed questions about the patient's sleep patterns and daytime sleepiness.",
+    "success_prev": false,
+    "intervened_index": 19,
+    "trial_0": {
+      "vignette_mcq": "Alzheimer disease",
+      "vignette_frq": "Alzheimer's disease.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are an AI doctor specializing in Neurology. Arrive at a diagnosis of a patient's medical condition. Ask only one question at a time, and it should not be more than 1 line. Continue asking questions until you're 100% confident of the diagnosis. Do not ask the same question multiple times. Ask different questions to cover more information. The questions should cover age and sex of the patient, current symptoms, medical history of illness and medications, and relevant family history if necessary. Keep your questions short and brief to not confuse the patient.  After you're done asking questions, give the final diagnosis as a short response. Do not explain, only give the diagnosis name. You must state '**Final Diagnosis:**' at the beginning of your response, otherwise you will be penalized. You must give only 1 diagnosis otherwise you will be penalized. Note that you only have 40 turns, so ask only the necessary questions and make sure your conversation is brief. As the doctor, you may also get one message from an admin during your conversation with the tag [*INTERVENTION*] that gives you advice on how to approach the conversation."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "user",
+          "content": "I've been forgetful lately, like misplacing things and having trouble remembering what I watched or read the day before."
+        },
+        {
+          "role": "assistant",
+          "content": "How long have you been experiencing these memory issues?"
+        },
+        {
+          "role": "user",
+          "content": "I've been experiencing these memory issues for the past 2 years."
+        },
+        {
+          "role": "assistant",
+          "content": "What is your age and sex?"
+        },
+        {
+          "role": "user",
+          "content": "I am a 73-year-old woman."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any other symptoms, like trouble concentrating or confusion about time or place?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I sometimes get confused about time, but I know where I am and who I am."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any mood changes, such as increased anxiety or depression?"
+        },
+        {
+          "role": "user",
+          "content": "I feel agitated when someone asks me questions directly, but I'm generally not worried about it."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of head trauma or neurological conditions?"
+        },
+        {
+          "role": "user",
+          "content": "I don't have any history of head trauma or known neurological conditions."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you currently taking any medications for other health conditions?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I'm currently taking medications for hypertension, heart disease, and high cholesterol."
+        },
+        {
+          "role": "assistant",
+          "content": "Has anyone in your family been diagnosed with dementia or Alzheimer\u2019s disease?"
+        },
+        {
+          "role": "user",
+          "content": "I\u2019m not sure if anyone in my family has been diagnosed with dementia or Alzheimer\u2019s disease."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any difficulty with daily tasks, like cooking or managing finances?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I've had trouble cooking because I've left the stove on after making meals."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any changes in your sleep patterns or daytime sleepiness?"
+        },
+        {
+          "role": "system",
+          "content": "[*INTERVENTION*: Make sure to ask detailed questions about the patient's sleep patterns and daytime sleepiness.]"
+        },
+        {
+          "role": "user",
+          "content": "I haven't noticed any specific changes in my sleep patterns or daytime sleepiness."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you often feel tired or unmotivated during the day?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't mentioned feeling particularly tired or unmotivated during the day."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any visual or auditory hallucinations?"
+        },
+        {
+          "role": "user",
+          "content": "No, I haven't experienced any visual or auditory hallucinations."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have a good social support system, such as family or friends you can rely on?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have my son who helps take care of me."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you been noted by others to repeat questions or tell the same stories frequently?"
+        },
+        {
+          "role": "user",
+          "content": "I haven\u2019t been told that I repeat questions or stories frequently."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any issues recognizing faces or familiar places?"
+        },
+        {
+          "role": "user",
+          "content": "No, I don\u2019t have any issues recognizing faces or familiar places."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you experience any difficulty in following conversations?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I sometimes have trouble following conversations because I take longer to think of the words."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any changes in your ability to perform familiar tasks, like driving or using appliances?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I got lost on my way home from a walk, which made me stop going for walks."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of strokes or transient ischemic attacks (TIAs)?"
+        },
+        {
+          "role": "user",
+          "content": "No, I don't have any history of strokes or TIAs."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you experience any difficulty with coordination or balance?"
+        },
+        {
+          "role": "user",
+          "content": "I haven\u2019t mentioned any difficulties with coordination or balance."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you ever undergone any cognitive testing or brain imaging studies?"
+        },
+        {
+          "role": "user",
+          "content": "No, I haven't undergone any cognitive testing or brain imaging studies."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you find it challenging to manage your daily medication or appointments?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't mentioned any challenges in managing my daily medications or appointments."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you often feel overwhelmed in social situations or have a decreased interest in social activities?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't said that I feel overwhelmed in social situations or have a decreased interest in social activities."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of depression or anxiety disorders?"
+        },
+        {
+          "role": "user",
+          "content": "No, I don't have a history of depression or anxiety disorders."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you recently noticed any changes in your appetite or weight?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't mentioned any changes in my appetite or weight."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any difficulty with reading or writing tasks?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't mentioned any difficulty with reading or writing tasks."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you often forget the names of familiar people or common objects?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I sometimes forget names, like my dog's name."
+        },
+        {
+          "role": "assistant",
+          "content": "Final Diagnosis: Alzheimer\u2019s Disease."
+        }
+      ],
+      "multiturn_mcq": "**Final Diagnosis:** Alzheimer disease",
+      "multiturn_frq": "**Final Diagnosis:** Mild Cognitive Impairment (MCI)",
+      "diagnosis": "**Final Diagnosis:** Mild Cognitive Impairment (MCI)",
+      "ground_truth": "alzheimer disease",
+      "reward": true,
+      "singleturn_mcq": "**Final Diagnosis:** Alzheimer disease",
+      "singleturn_frq": "**Final Diagnosis:** Mild Cognitive Impairment",
+      "summarized_conversation": "A 73-year-old woman presents with concerns about her memory. She has been forgetful lately, misplacing items and having trouble remembering what she watched or read the day before. These memory issues have been experienced for the past 2 years. The woman sometimes confuses time, but she knows where she is and who she is. She feels agitated when asked questions directly, but she is generally not worried about it. There is no history of head trauma or known neurological conditions. Currently, she is taking medications for hypertension, heart disease, and high cholesterol. It is unclear if anyone in her family has been diagnosed with dementia or Alzheimer\u2019s disease. She has had trouble cooking because she has left the stove on after making meals. The woman has not noticed any specific changes in her sleep patterns or daytime sleepiness, nor does she feel particularly tired or unmotivated during the day. She has not experienced any visual or auditory hallucinations. Her son helps take care of her. She has not been told that she repeats questions or stories frequently and does not have any issues recognizing faces or familiar places. Sometimes, she has trouble following conversations because she takes longer to think of the words. She experienced getting lost on her way home from a walk, which made her stop going for walks. There is no history of strokes or TIAs, and she has not mentioned any difficulties with coordination or balance. She has not undergone any cognitive testing or brain imaging studies. The woman has not indicated any challenges in managing her daily medications or appointments, nor has she mentioned feeling overwhelmed in social situations or a decreased interest in social activities. She does not have a history of depression or anxiety disorders and has not reported any changes in her appetite or weight. There are no difficulties with reading or writing tasks, but she sometimes forgets names, like her dog's name.",
+      "summarized_mcq": "Alzheimer disease",
+      "summarized_frq": "Mild Cognitive Impairment (MCI)."
+    },
+    "success_after": true
+  },
+  {
+    "case_id": "case_205",
+    "case_vignette": "A 34-year-old man with AIDS comes to the physician because of a 2-day history of decreasing vision and seeing black spots in his right eye. He has no pain and the left eye is asymptomatic. He was treated for fungal esophagitis 6 months ago with fluconazole. He was diagnosed with Kaposi's sarcoma 2 years ago. Current medications include efavirenz, tenofovir, emtricitabine, azithromycin, trimethoprim-sulfamethoxazole, multivitamins, and a nutritional supplement. He is 170 cm (5 ft 7 in) tall and weighs 45 kg (99 lbs);BMI is 15.6 kg/m2. His temperature is 37\u00b0C (98.6\u00b0F), pulse is 89/min, and blood pressure is 110/70 mm Hg. Examination shows cervical lymphadenopathy. There are multiple violaceous plaques seen over his trunk and extremities. Fundoscopic examination shows granular yellow-white opacities around the retinal vessels and multiple areas of dot-blot hemorrhages. His CD4+ T-lymphocyte count is 36/mm3. ",
+    "question": "Which  is the most likely diagnosis?",
+    "improved": false,
+    "reward": false,
+    "intervened_first_or_last": 2,
+    "failure_brief": "The agent did not inquire about visual acuity, which is essential for diagnosing eye-related issues.",
+    "failure_index": 15,
+    "intervened_message": "Inquire about the patient's visual acuity and any specific changes in vision to gather essential information for diagnosis.",
+    "success_prev": false,
+    "intervened_index": 17,
+    "trial_0": {
+      "vignette_mcq": "Cytomegalovirus retinitis",
+      "vignette_frq": "Cytomegalovirus retinitis.",
+      "multiturn_conversation": [
+        {
+          "role": "system",
+          "content": "You are an AI doctor specializing in Infectious Diseases. Arrive at a diagnosis of a patient's medical condition. Ask only one question at a time, and it should not be more than 1 line. Continue asking questions until you're 100% confident of the diagnosis. Do not ask the same question multiple times. Ask different questions to cover more information. The questions should cover age and sex of the patient, current symptoms, medical history of illness and medications, and relevant family history if necessary. Keep your questions short and brief to not confuse the patient.  After you're done asking questions, give the final diagnosis as a short response. Do not explain, only give the diagnosis name. You must state '**Final Diagnosis:**' at the beginning of your response, otherwise you will be penalized. You must give only 1 diagnosis otherwise you will be penalized. Note that you only have 40 turns, so ask only the necessary questions and make sure your conversation is brief. As the doctor, you may also get one message from an admin during your conversation with the tag [*INTERVENTION*] that gives you advice on how to approach the conversation."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! What symptoms are you facing today?"
+        },
+        {
+          "role": "user",
+          "content": "I have been experiencing decreased vision and seeing black spots in my right eye for the past two days."
+        },
+        {
+          "role": "assistant",
+          "content": "What is your age and sex?"
+        },
+        {
+          "role": "user",
+          "content": "I am a 34-year-old male."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of eye diseases or vision problems?"
+        },
+        {
+          "role": "user",
+          "content": "No, I do not have any history of eye diseases or vision problems."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you currently taking any medications or have any chronic illnesses?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I am taking several medications for my condition, including efavirenz, tenofovir, emtricitabine, azithromycin, trimethoprim-sulfamethoxazole, multivitamins, and a nutritional supplement, and I have AIDS."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any other symptoms, such as headaches, flashes of light, or pain in the eye?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not experienced any pain or other symptoms like headaches or flashes of light."
+        },
+        {
+          "role": "assistant",
+          "content": "Has there been any recent trauma to your eye or head?"
+        },
+        {
+          "role": "user",
+          "content": "No, there has been no recent trauma to my eye or head."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any family history of eye diseases or other related conditions?"
+        },
+        {
+          "role": "user",
+          "content": "No, there is no family history of eye diseases or related conditions."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed any changes in your peripheral vision?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not noticed any changes in my peripheral vision."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent infections or illnesses?"
+        },
+        {
+          "role": "system",
+          "content": "[*INTERVENTION*: Inquire about the patient's visual acuity and any specific changes in vision to gather essential information for diagnosis.]"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not had any recent infections or illnesses."
+        },
+        {
+          "role": "assistant",
+          "content": "What is your current visual acuity in the affected eye?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't specifically tested my visual acuity, but I am experiencing decreased vision in my right eye."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you noticed a sudden increase in the number of black spots or floaters in your vision?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have been seeing black spots in my right eye, and it has been happening for the past two days."
+        },
+        {
+          "role": "assistant",
+          "content": "Is your vision in the left eye normal?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, my left eye is normal and has no symptoms."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any history of hypertension or diabetes?"
+        },
+        {
+          "role": "user",
+          "content": "No, I do not have a history of hypertension or diabetes."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you recently had a dilated eye examination or visited an eye specialist?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not had a dilated eye examination or visited an eye specialist recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Are you experiencing any symptoms of general fatigue or weakness?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have been feeling weak."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you been experiencing any significant weight loss recently?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have lost weight recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you had any recent lab tests related to your AIDS treatment or general health?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have had lab tests related to my AIDS treatment."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you received any new treatments or changes in your medications recently?"
+        },
+        {
+          "role": "user",
+          "content": "No, there have been no new treatments or changes in my medications recently."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you been following up regularly with a healthcare provider for your AIDS management?"
+        },
+        {
+          "role": "user",
+          "content": "Yes, I have been following up regularly with a healthcare provider for my AIDS management."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you experienced any visual changes or symptoms during your follow-up appointments previously?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not experienced any visual changes or symptoms during my previous follow-up appointments."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you have any concurrent medical conditions or situations that might impact your immune system?"
+        },
+        {
+          "role": "user",
+          "content": "No, I do not have any other medical conditions that might impact my immune system."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you wear glasses or contact lenses for any vision correction?"
+        },
+        {
+          "role": "user",
+          "content": "No, I do not wear glasses or contact lenses for vision correction."
+        },
+        {
+          "role": "assistant",
+          "content": "Have you recently traveled or been exposed to any known infections?"
+        },
+        {
+          "role": "user",
+          "content": "No, I have not traveled recently or been exposed to any known infections."
+        },
+        {
+          "role": "assistant",
+          "content": "Do you notice any changes in your vision when you cover the affected eye compared to uncovering it?"
+        },
+        {
+          "role": "user",
+          "content": "I haven't noticed any specific changes in my vision when covering the affected eye compared to uncovering it."
+        },
+        {
+          "role": "assistant",
+          "content": "Final Diagnosis:** Vitreous hemorrhage related to HIV-related issues."
+        }
+      ],
+      "multiturn_mcq": "**Final Diagnosis:** Cytomegalovirus retinitis",
+      "multiturn_frq": "**Final Diagnosis:** Retinal detachment.",
+      "diagnosis": "**Final Diagnosis:** Retinal detachment.",
+      "ground_truth": "cytomegalovirus retinitis",
+      "reward": false,
+      "singleturn_mcq": "**Final Diagnosis:** Cytomegalovirus retinitis",
+      "singleturn_frq": "**Final Diagnosis:** Retinal detachment.",
+      "summarized_conversation": "A patient has been experiencing decreased vision and seeing black spots in his right eye for the past two days. The patient is a 34-year-old male with no history of eye diseases or vision problems. He is taking several medications for his condition, including efavirenz, tenofovir, emtricitabine, azithromycin, trimethoprim-sulfamethoxazole, multivitamins, and a nutritional supplement, and he has AIDS. The patient has not experienced any pain or other symptoms like headaches or flashes of light. There has been no recent trauma to his eye or head, and there is no family history of eye diseases or related conditions. He has not noticed any changes in his peripheral vision, nor has he had any recent infections or illnesses. Although he hasn't specifically tested his visual acuity, he is experiencing decreased vision in his right eye and has been seeing black spots in that eye for the past two days. His left eye is normal and has no symptoms. The patient does not have a history of hypertension or diabetes, and he has not had a dilated eye examination or visited an eye specialist recently. He has been feeling weak and has lost weight recently. Lab tests related to his AIDS treatment have been conducted, but there have been no new treatments or changes in his medications recently. He has been following up regularly with a healthcare provider for his AIDS management and has not experienced any visual changes or symptoms during his previous follow-up appointments. The patient does not have any other medical conditions that might impact his immune system, does not wear glasses or contact lenses for vision correction, and has not traveled recently or been exposed to any known infections. He hasn't noticed any specific changes in his vision when covering the affected eye compared to uncovering it.",
+      "summarized_mcq": "Cytomegalovirus retinitis",
+      "summarized_frq": "Vitreous hemorrhage."
+    },
+    "success_after": false
+  }
+]
