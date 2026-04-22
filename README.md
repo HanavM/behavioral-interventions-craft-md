@@ -11,8 +11,8 @@ Through our evaluations, the following results were achieved: (with more evaluat
 | Worker / User Agent  | Intervenor         | Craft-MD Infectious Disease   | Craft-MD Neurology   |
 | -------------------- | ------------------ | ----------------------------- | -------------------- |
 | GPT-4.1-mini         | None               | 25.9                          | 25.0                 |
-| GPT-4.1-mini         | GPT-5-mini (Bo5)   | 44.4 (+71.4%)                 | 38.9 (+55.6%)        |
+| GPT-4.1-mini         | GPT-5-mini (N=5)   | 44.4 (+71.4%)                 | 38.9 (+55.6%)        |
 | -------------------- | ------------------ | ----------------------------- | -------------------- |
 | GPT-5-mini           | None               | 42.4                          | 39.0                 |
-| GPT-5-mini           | GPT-5-mini (Bo5)   | 57.6 (+35.7%)                 | 58.5 (+50.0%)        |
+| GPT-5-mini           | GPT-5-mini (N=5)   | 57.6 (+35.7%)                 | 58.5 (+50.0%)        |
 
