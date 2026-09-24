@@ -102,7 +102,9 @@ Adapt: task count → case count per category; `r.get("traj")` → the `trial_0.
 3. **Partial best-of-N counted as complete.** One row per candidate means a kill mid-case leaves 3 of 5. Require all N (or a trusted end-of-run marker).
 4. **Errored attempts not counted toward a task's budget**, so coverage never closes.
 
-Also note two data-shape traps when computing coverage here: records with no `trial_*` key are written for already-passing cases and for intervenor failure (`:1090-1097`, `:1133-1140`) — and **the intervenor-failure record sets `reward=True`**, which looks like a bug; treat it as the pre-intervention reward, and confirm with the repo owner before reporting any number that depends on it.
+Also note a data-shape trap when computing coverage here: records with no `trial_*` key are written both for already-passing cases and for intervenor failure (`:1090-1097`, `:1133-1140`). Filter on `intervened_index == -1` rather than assuming every record carries a trajectory.
+
+The intervenor-failure record used to hardcode `reward = True`, which would have counted every intervenor failure as a solved case. Fixed — it now carries `success_pre_intervention`, the case's actual baseline outcome, at both sites (`craftmd_gpt_intervention` and the legacy `craftmd_gpt`). The reported success rates were never computed from that field, so no published number changes; the fix matters for anything new that scores off `reward` directly, which the ported controls and sweep driver do.
 
 ## 5. Acceptance checks
 

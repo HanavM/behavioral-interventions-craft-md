@@ -536,7 +536,9 @@ def craftmd_gpt(case, path_dir, doctor_model_name, patient_model_name, intervent
             intervened_stats["case_id"] = case_id
             intervened_stats["case_vignette"] = case_desc
             intervened_stats["question"] = question
-            intervened_stats["reward"] = True
+            # no intervention was ever attempted, so the case keeps its baseline
+            # outcome; hardcoding True counted every intervenor failure as a success
+            intervened_stats["reward"] = success_pre_intervention
             intervened_stats["intervened_index"] = -1
             intervened_stats["intervened_message"] = "intervening agent failed."
             intervened_stats["success_prev"] = success_pre_intervention
@@ -1134,7 +1136,9 @@ def craftmd_gpt_intervention(case, baseline_trajectory, path_dir, doctor_model_n
             intervened_stats["case_id"] = case_id
             intervened_stats["case_vignette"] = case_desc
             intervened_stats["question"] = question
-            intervened_stats["reward"] = True
+            # no intervention was ever attempted, so the case keeps its baseline
+            # outcome; hardcoding True counted every intervenor failure as a success
+            intervened_stats["reward"] = success_pre_intervention
             intervened_stats["intervened_index"] = -1
             intervened_stats["intervened_message"] = "intervening agent failed."
             intervened_stats["success_prev"] = success_pre_intervention
